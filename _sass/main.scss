@@ -1,3 +1,55 @@
-.current {
+body {
+    font-size: 20px;
+    background-color: #5d9b9b;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    word-spacing: 2px;
+}
+
+//Contenedor principal de la página.
+.container {
+    margin: 0 auto;
+    width: 80%;
+    border:2px solid grey;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+
+/*---------- PANEL DE NAVEGACION ----------*/
+nav {
+    height: 50px;
+}
+
+// Enlaces
+nav a {
+    float: left;
+    margin: 0.5em;
+}
+
+// Color de enlace de la pagina actual.
+.current-page {
     color: green;
 }
+
+/*---------- MAIN ----------*/
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*---------- ARTICULOS ----------*/
+article {
+    padding: 0 20px 0 20px;
+}
+
+article p {
+    padding: 0 20px 0 20px;
+    text-align: justify;
+}
+
+article li {
+    list-style-type: none;
+}
+

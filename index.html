@@ -3,4 +3,6 @@ layout: default
 title: Inicio
 ---
 
-<h1>{{ "Hola mundo!" | downcase }}</h1>
+{% for category in site.categories %}
+    <a href="categorias/{{ category[0] }}">{{ category[0] }}</a>
+{% endfor %}
