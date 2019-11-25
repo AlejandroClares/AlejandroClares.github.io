@@ -1,4 +1,4 @@
 collections_dir: colecciones
 collections:
-  - main_page_tutorial
+  main_page_tutorial
     output: true
