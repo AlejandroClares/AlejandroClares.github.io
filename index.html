@@ -3,6 +3,6 @@ layout: default
 title: Inicio
 ---
 
-{% for category in site.categories %}
-    <a href="categorias/{{ category[0] }}">{{ category[0] }}</a>
+{% for main_page_tutorial in site.main_page_tutorial %}
+    <a href="categorias/{{ category[0] }}">{{ main_page_tutorial.name }}</a>
 {% endfor %}
