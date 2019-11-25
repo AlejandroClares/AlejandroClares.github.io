@@ -1,0 +1,14 @@
+I"h<p>CSS3 es el último estándar de css y es totalmente compatible con versiones anteriores de css.
+Algunos de las novedades más importantes son:</p>
+
+<ul>
+  <li><strong>border-radius</strong>: Crear esquinas redondeadas para los elementos.</li>
+  <li><strong>border-image</strong>: Especifica una imagen como el borde de un elemento.</li>
+  <li><strong>Múltiples backgrounds</strong>: Permite aplicar múltiples fondos.</li>
+  <li><strong>box-shadow</strong>: Crea sombras en los elementos especificando el color y tamaño.</li>
+  <li><strong>Degradados</strong>: Establecer fondos de color de un elemento a degradados.</li>
+  <li><strong>Transformaciones</strong>: Rotar, escalar, mover y sesgar elementos.</li>
+  <li>Transiciones: Animaciones de una propiedad css a otra.</li>
+  <li>Animaciones: Permite crear keyframes, establecer la duración, suavizado.</li>
+</ul>
+:ET

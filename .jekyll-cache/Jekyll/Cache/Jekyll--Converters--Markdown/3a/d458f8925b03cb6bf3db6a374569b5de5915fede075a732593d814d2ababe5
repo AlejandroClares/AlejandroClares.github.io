@@ -1,0 +1,22 @@
+I"�<h1 id="introducción-a-css3">Introducción a CSS3</h1>
+
+<p>CSS3 es el último estándar de css y es totalmente compatible con versiones anteriores de css.
+Algunos de las novedades más importantes son:</p>
+
+<ul>
+  <li><strong>border-radius</strong>: Crear esquinas redondeadas para los elementos.</li>
+  <li><strong>border-image</strong>: Especifica una imagen como el borde de un elemento.</li>
+  <li><strong>Múltiples backgrounds</strong>: Permite aplicar múltiples fondos.</li>
+  <li><strong>box-shadow</strong>: Crea sombras en los elementos especificando el color y tamaño.</li>
+  <li><strong>Degradados</strong>: Establecer fondos de color de un elemento a degradados.</li>
+  <li><strong>Transformaciones</strong>: Rotar, escalar, mover y sesgar elementos.</li>
+  <li><strong>Transiciones</strong>: Animaciones de una propiedad css a otra.</li>
+  <li>
+    <p><strong>Animaciones</strong>: Permite crear keyframes, establecer la duración, suavizado.</p>
+  </li>
+  <li>
+    <p><a href="/css_tutorial/2019-11-25-01Introduccion-a-css3.html">Introducción a CSS3</a></p>
+  </li>
+  <li><a href="/css_tutorial/2019-11-25-02Conceptos-basicos.html">Conceptos básicos</a></li>
+</ul>
+:ET

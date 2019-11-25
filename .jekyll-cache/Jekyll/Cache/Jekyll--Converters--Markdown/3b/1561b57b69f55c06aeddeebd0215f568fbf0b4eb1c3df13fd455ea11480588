@@ -1,0 +1,16 @@
+I"*<h1 id="conceptos-básicos">Conceptos básicos</h1>
+<h3 id="prefijos-de-navegación">Prefijos de navegación</h3>
+
+<p>Son una forma en la que los fabricantes de navegadores añaden soporte a las nuevas características de css en periodos de prueba o experimentación.</p>
+
+<p>Por ejemplo, el prefijo de Safari y Chrome es -webkit-.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.table</span> <span class="p">{</span>
+        <span class="nl">-webkit-border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p>La mayoría de navegadores de hoy en día funcionan sin prefijos, pero es esencial conocerlos para la compatibilidad y entendimiento de códigos antiguos.</p>
+
+<p>Escribir varias veces las propiedades para que funcionen en diferentes navegadores puede ser molesto pero es temporal. 
+Mientras los navegadores mejoran, añadirán soporte a las propiedades y eliminaran los prefijos.</p>
+
+:ET
