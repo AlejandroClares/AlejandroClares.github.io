@@ -129,7 +129,7 @@ La propiedad **inset** permite crear sombras dentro del elemento.
     
 
 #### Múltiples sombras
-Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla **separadas con una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
+Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla **separadas por una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
 
 ``` css
     .div {
