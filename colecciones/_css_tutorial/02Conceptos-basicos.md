@@ -25,7 +25,7 @@ Escribir varias veces las propiedades para que funcionen en diferentes navegador
 <hr>
 
 ##  border-radius
-Podemos darle esquinas redondeadas a cualquier elemento.
+La propiedad **border-radius** nos permite darle esquinas redondeadas a cualquier elemento.
 ``` css
     .div{
         width: 200px;
@@ -59,9 +59,11 @@ Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser 
 ```
 <a href="assets/examples/02border-radius.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 ## box-shadow
 
-La propiedad CSS3 box-shadow permite aplicar sombras a los elementos.    
+La propiedad CSS3 **box-shadow** permite aplicar sombras a los elementos.    
 Los parámetros de esta propiedad son:
 - Desplazamiento horizontal: Desplaza la sombra hacia la derecha. (Requerido)
 - Desplazamiento vertical: Desplaza la sombra hacia abajo. (Requerido)
@@ -77,7 +79,8 @@ Los parámetros de esta propiedad son:
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
 
-Adicionalmente, hay dos propiedades opcionales; **Blur**(desenfoque) y **Spread**(propagación).      
+# Blur & Spread
+Adicionalmente, hay dos propiedades opcionales: **Blur** (desenfoque) y **Spread** (propagación).      
 Estos valores se añaden antes de asignar el color.
 
 ``` css
@@ -89,3 +92,19 @@ Estos valores se añaden antes de asignar el color.
     }
 ```
 <a href="assets/examples/04box-shadow.html" target="_blank">Ejecutar código</a>
+
+A las propiedades de box-shadow se les permite usar valores negativos.  
+- **Desplazamiento horizontal**: La sombra se desplaza hacia la **izquierda**.
+- **Desplazamiento vertical**: La sombra se desplaza hacia **arriba**.
+- **Desenfoque**: Los valores negativos no estan permitidos.
+- **Propagación**: La sombra es encogida.
+
+``` css
+    .div {
+        width: 300px;
+        height: 100px;
+        background-color: orangered;
+        box-shadow: -10px -10px 5px -5px grey;
+    }
+```
+<a href="assets/examples/05box-shadow.html" target="_blank">Ejecutar código</a>
