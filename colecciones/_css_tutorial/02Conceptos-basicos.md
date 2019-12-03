@@ -27,7 +27,7 @@ Escribir varias veces las propiedades para que funcionen en diferentes navegador
 ##  border-radius
 Podemos darle esquinas redondeadas a cualquier elemento.
 ``` css
-    .cuadrado{
+    .div{
         width: 200px;
         height: 200px;
         background-color: orangered;
@@ -35,26 +35,56 @@ Podemos darle esquinas redondeadas a cualquier elemento.
     }
 ```
 
-<a href="assets/examples/00border.html" target="_blank">Ejecutar código</a>
+<a href="assets/examples/00border-radius.html" target="_blank">Ejecutar código</a>
 
 Podemos especificar el radio de cada esquina en orden: superior-izquierdo, superior-derecho, inferior-derecho, inferior-izquierdo.
 
 ``` css
-    .cuadrado{
+    .div{
         width: 200px;
         height: 200px;
         background-color: orangered;
         border-radius: 0 0 0 50px;
     }
 ```
-<a href="assets/examples/01border.html" target="_blank">Ejecutar código</a>
+<a href="assets/examples/01border-radius.html" target="_blank">Ejecutar código</a>
 
 Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser la mitad del ancho y alto de la caja.
 ``` css
-    .circulo {
+    .div {
         width: 200px;
         height: 200px;
         border-radius: 100px;
     }
 ```
-<a href="assets/examples/02border.html" target="_blank">Ejecutar código</a>
+<a href="assets/examples/02border-radius.html" target="_blank">Ejecutar código</a>
+
+## box-shadow
+
+La propiedad CSS3 box-shadow permite aplicar sombras a los elementos. Los parámetros de esta propiedad son:
+- Desplazamiento horizontal: Desplaza la sombra hacia la derecha. (Requerido)
+- Desplazamiento vertical: Desplaza la sombra hacia abajo. (Requerido)
+- Color: Color de la sombra. (opcional)
+
+``` css
+    .div {
+        width: 300px;
+        height: 100px;
+        background-color: orangered;
+        box-shadow: 10px 10px grey;
+    }
+```
+<a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
+
+Adicionalmente, hay dos propiedades opcionales; Blur(desenfoque) y Spread(propagación).
+Estos valores se añaden antes de asignar el color.
+
+``` css
+    .div {
+        width: 300px;
+        height: 100px;
+        background-color: orangered;
+        box-shadow: 10px 10px 5px 5px grey;
+    }
+```
+<a href="assets/examples/04box-shadow.html" target="_blank">Ejecutar código</a>
