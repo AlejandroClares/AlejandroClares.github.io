@@ -113,7 +113,7 @@ A las propiedades de box-shadow se les permite usar valores negativos.
 <a href="assets/examples/05box-shadow.html" target="_blank">Ejecutar código</a>
    
    
-#### inset
+#### Inset
 La propiedad **inset** permite crear sombras dentro del elemento.
 
 ``` css
