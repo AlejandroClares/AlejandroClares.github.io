@@ -37,7 +37,7 @@ La propiedad **border-radius** nos permite darle esquinas redondeadas a cualquie
 
 <a href="assets/examples/00border-radius.html" target="_blank">Ejecutar código</a>
 
-Podemos especificar el radio de cada esquina en orden: superior-izquierdo, superior-derecho, inferior-derecho, inferior-izquierdo.
+Podemos especificar el radio por separado de cada esquina en orden: superior-izquierdo, superior-derecho, inferior-derecho, inferior-izquierdo.
 
 ``` css
     .div{
@@ -65,9 +65,9 @@ Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser 
 
 La propiedad CSS3 **box-shadow** permite aplicar sombras a los elementos.    
 Los parámetros de esta propiedad son:
-- Desplazamiento horizontal: Desplaza la sombra hacia la derecha. (Requerido)
-- Desplazamiento vertical: Desplaza la sombra hacia abajo. (Requerido)
-- Color: Color de la sombra. (opcional)
+- **Desplazamiento horizontal**: Desplaza la sombra hacia la derecha. (Requerido)
+- **Desplazamiento vertical**: Desplaza la sombra hacia abajo. (Requerido)
+- **Color**: Color de la sombra. El color por defecto es negro. (opcional)
 
 ``` css
     .div {
@@ -94,6 +94,8 @@ Estos valores se añaden antes de asignar el color.
 ```
 <a href="assets/examples/04box-shadow.html" target="_blank">Ejecutar código</a>
 
+
+#### Valores negativos
 A las propiedades de box-shadow se les permite usar valores negativos.  
 - **Desplazamiento horizontal**: La sombra se desplaza hacia la **izquierda**.
 - **Desplazamiento vertical**: La sombra se desplaza hacia **arriba**.
