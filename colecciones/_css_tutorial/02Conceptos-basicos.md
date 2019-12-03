@@ -79,7 +79,7 @@ Los parámetros de esta propiedad son:
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
 
-# Blur & Spread
+##### Blur & Spread
 Adicionalmente, hay dos propiedades opcionales: **Blur** (desenfoque) y **Spread** (propagación).      
 Estos valores se añaden antes de asignar el color.
 
