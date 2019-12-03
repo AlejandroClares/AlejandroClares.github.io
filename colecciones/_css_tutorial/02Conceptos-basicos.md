@@ -61,7 +61,8 @@ Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser 
 
 ## box-shadow
 
-La propiedad CSS3 box-shadow permite aplicar sombras a los elementos. Los parámetros de esta propiedad son:
+La propiedad CSS3 box-shadow permite aplicar sombras a los elementos.    
+Los parámetros de esta propiedad son:
 - Desplazamiento horizontal: Desplaza la sombra hacia la derecha. (Requerido)
 - Desplazamiento vertical: Desplaza la sombra hacia abajo. (Requerido)
 - Color: Color de la sombra. (opcional)
@@ -76,8 +77,8 @@ La propiedad CSS3 box-shadow permite aplicar sombras a los elementos. Los parám
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
 
-Adicionalmente, hay dos propiedades opcionales; Blur(desenfoque) y Spread(propagación).  
-Estos valores se añaden antes de asignar el color.  
+Adicionalmente, hay dos propiedades opcionales; **Blur**(desenfoque) y **Spread**(propagación).      
+Estos valores se añaden antes de asignar el color.
 
 ``` css
     .div {
