@@ -76,8 +76,8 @@ La propiedad CSS3 box-shadow permite aplicar sombras a los elementos. Los parám
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
 
-Adicionalmente, hay dos propiedades opcionales; Blur(desenfoque) y Spread(propagación).
-Estos valores se añaden antes de asignar el color.
+Adicionalmente, hay dos propiedades opcionales; Blur(desenfoque) y Spread(propagación).  
+Estos valores se añaden antes de asignar el color.  
 
 ``` css
     .div {
