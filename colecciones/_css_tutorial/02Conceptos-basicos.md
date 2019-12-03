@@ -79,7 +79,7 @@ Los parámetros de esta propiedad son:
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
    
-   
+
 #### Blur & Spread
 Adicionalmente, hay dos propiedades opcionales: **Blur** (desenfoque) y **Spread** (propagación).      
 Estos valores se añaden antes de asignar el color.
@@ -109,3 +109,35 @@ A las propiedades de box-shadow se les permite usar valores negativos.
     }
 ```
 <a href="assets/examples/05box-shadow.html" target="_blank">Ejecutar código</a>
+   
+   
+#### inset
+La propiedad **inset** permite crear sombras dentro del elemento.
+
+``` css
+    .div {
+        width: 300px;
+        height: 100px;
+        background-color: orangered;
+        box-shadow: inset 10px 10px 5px 5px grey;
+    }
+```
+
+<a href="assets/examples/06box-shadow.html" target="_blank">Ejecutar código</a>
+    
+
+#### Múltiples sombras
+Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla **separadas con una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
+
+``` css
+    .div {
+        width: 300px;
+            height: 100px;
+            background-color: orangered;
+            box-shadow: 
+            inset 10px 10px 2px grey,
+            inset -10px -10px 2px grey;
+    }
+```
+
+<a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a>
