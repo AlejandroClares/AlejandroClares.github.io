@@ -149,7 +149,7 @@ Podemos definir múltiples sombras para una misma caja escribiendo estas en la m
 #### Colores RGBA
 
 Los colores **RGBA** son una extension de RGB, añadiendo un canal *Alpha* que permite cambiar la opacidad del color.   
-Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El parámetro alpha es un numero entre 0 y 1, donde 0 es transparente y 1 opaco.
+Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El parámetro alpha es un número entre 0 y 1, donde 0 es transparente y 1 opaco.
 
 ``` css
     .div {
@@ -159,3 +159,21 @@ Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El par�
     }
 ```
 <a href="assets/examples/08rgba.html" target="_blank">Ejecutar código</a>
+
+#### Colores HSL y HSLA
+
+Los colores **HSL** se especifican como: **hsl(tono, saturación, luminosidad)**.   
+- **Tono** es un grado en la rueda de colores que va desde 0 a 360. 0 y 360 es rojo, 120 es verde y 240 el azul.
+- **Saturación** es un valor porcentual donde 100% Es a todo color.
+- **Luminosidad** es un valor porcentual donde 0% es oscuro y 100% es blanco.   
+
+Los colores **HSLA** funcionan igual, añadiendo el canal *alpha*.  
+
+``` css
+    .div {
+        width: 200px;
+        height: 200px;
+        background-color: hsl(120, 30%, 50%);
+    }
+```
+<a href="assets/examples/09hsl.html" target="_blank">Ejecutar código</a>
