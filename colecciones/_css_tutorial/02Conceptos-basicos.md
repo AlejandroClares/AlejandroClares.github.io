@@ -144,6 +144,8 @@ Podemos definir múltiples sombras para una misma caja escribiendo estas en la m
 
 <a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 ## Efectos de transparencia
 
 #### Colores RGBA
