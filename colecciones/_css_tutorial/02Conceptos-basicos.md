@@ -166,7 +166,7 @@ Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El par�
 
 Los colores **HSL** se especifican como: **hsl(tono, saturación, luminosidad)**.   
 - **Tono** es un grado en la rueda de colores que va desde 0 a 360. 0 y 360 es rojo, 120 es verde y 240 el azul.
-- **Saturación** es un valor porcentual donde 100% Es a todo color.
+- **Saturación** es un valor porcentual donde 100% es a todo color.
 - **Luminosidad** es un valor porcentual donde 0% es oscuro y 100% es blanco.   
 
 Los colores **HSLA** funcionan igual, añadiendo el canal *alpha*.  
