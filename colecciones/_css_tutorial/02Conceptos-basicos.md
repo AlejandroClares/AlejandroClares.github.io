@@ -18,7 +18,7 @@ Por ejemplo, el prefijo de Safari y Chrome es -webkit-.
 ```
 La mayoría de navegadores de hoy en día funcionan sin prefijos, pero es esencial conocerlos para la compatibilidad y entendimiento de códigos antiguos.
 
-Escribir varias veces las propiedades para que funcionen en diferentes navegadores puede ser molesto pero es temporal. Mientras los navegadores mejoran, añadirán soporte a las propiedades y eliminaran los prefijos.
+Escribir varias veces las propiedades para que funcionen en diferentes navegadores puede ser molesto pero es temporal. Mientras los navegadores mejoran, añadirán soporte a las propiedades y eliminarán los prefijos.
 
 ![Prefijos de navegador](assets/image/prefijosCSS3.jpg)
 
