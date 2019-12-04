@@ -143,3 +143,19 @@ Podemos definir múltiples sombras para una misma caja escribiendo estas en la m
 ```
 
 <a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a>
+
+## Efectos de transparencia
+
+#### Colores RGBA
+
+Los colores **RGBA** son una extension de RGB, añadiendo un canal *Alpha* que permite cambiar la opacidad del color.   
+Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El parámetro alpha es un numero entre 0 y 1, donde 0 es transparente y 1 opaco.
+
+``` css
+    .div {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+```
+<a href="assets/examples/08rgba.html" target="_blank">Ejecutar código</a>
