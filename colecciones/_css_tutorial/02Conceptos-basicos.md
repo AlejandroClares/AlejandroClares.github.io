@@ -206,3 +206,35 @@ La propiedad text-shadow soporta múltiples sombras, separando con comas sus val
     }
 ```
 <a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
+
+<hr>
+
+## Pseudo-Clases
+
+Las **pseudo-clases** permiten dar estilo a elementos del arbol DOM sin necesidad de usar javascript. Una pseudo clase se define con dos puntos (selector:pseudo-clase)
+
+Las pseudo-clases más comúnes son **:first-child** y **:last-child**
+
+``` css
+    div p:first-child {
+        color: orangered;
+    }
+```
+<a href="assets/examples/12pseudo-clases.html" target="_blank">Ejecutar código</a>
+
+``` css
+    input:checked + label {
+        color: limegreen;
+    }
+
+    input[type="radio"]:checked {
+        box-shadow: 0px 0px 0px 3px orangered;
+    }
+
+    input[type="checkbox"]:checked {
+        box-shadow: 0px 0px 0px 3px hotpink;
+    }
+```
+<a href="assets/examples/13pseudo-clases.html" target="_blank">Ejecutar código</a>
+
+Puedes encontrar una lista de las pseudo-clases en [developer.mozilla.org](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar "Lista de pseudo-clases")
