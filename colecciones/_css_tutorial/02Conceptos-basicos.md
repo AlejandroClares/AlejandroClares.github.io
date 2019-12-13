@@ -202,7 +202,7 @@ La propiedad text-shadow soporta múltiples sombras, separando con comas sus val
 ``` css
     h1 {
         text-shadow: 10px 10px 3px grey,
-                    5px 5px 2px black;
+                    5px 5px 2px orange;
     }
 ```
 <a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
