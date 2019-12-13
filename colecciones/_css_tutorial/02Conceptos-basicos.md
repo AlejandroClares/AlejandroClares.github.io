@@ -180,6 +180,8 @@ Los colores **HSLA** funcionan igual, añadiendo el canal *alpha*.
 ```
 <a href="assets/examples/09hsl.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 ## text-shadow
 
 La propiedad **text-shadow** permite insertar sombras al texto. La propiedad text-shadow se define: **text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);**
