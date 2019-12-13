@@ -194,3 +194,14 @@ El argumento de color tambien es opcional, pero si no se añade el color por def
     }
 ```
 <a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a>
+
+#### Múltiples sombras
+
+La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores
+
+``` css
+    h1 {
+        text-shadow: 10px 10px 3px grey,
+                    5px 5px 2px black;
+    }
+```
