@@ -205,3 +205,4 @@ La propiedad text-shadow soporta múltiples sombras, separando con comas sus val
                     5px 5px 2px black;
     }
 ```
+<a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
