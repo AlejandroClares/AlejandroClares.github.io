@@ -222,6 +222,8 @@ Las pseudo-clases más comúnes son **:first-child** y **:last-child**
 ```
 <a href="assets/examples/12pseudo-clases.html" target="_blank">Ejecutar código</a>
 
+
+La pseudo-clase **:checked** representa cualquier elemento input de tipo radio, option o checkbox que este marcado.
 ``` css
     input:checked + label {
         color: limegreen;
