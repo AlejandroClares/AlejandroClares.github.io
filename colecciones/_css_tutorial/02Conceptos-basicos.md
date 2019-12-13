@@ -239,4 +239,4 @@ La pseudo-clase **:checked** representa cualquier elemento input de tipo radio, 
 ```
 <a href="assets/examples/13pseudo-clases.html" target="_blank">Ejecutar código</a>
 
-Puedes encontrar una lista de las pseudo-clases en [developer.mozilla.org](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar "Lista de pseudo-clases")
+Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">developer.mozilla.org</a>
