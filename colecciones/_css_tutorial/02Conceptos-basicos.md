@@ -239,4 +239,32 @@ La pseudo-clase **:checked** representa cualquier elemento input de tipo radio, 
 ```
 <a href="assets/examples/13pseudo-clases.html" target="_blank">Ejecutar código</a>
 
-Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">developer.mozilla.org</a>
+Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">developer.mozilla.org</a>.
+
+<hr>
+
+## Pseudo-Elementos
+
+Los **pseudo-elementos** permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con **::** aunque tambien pueden usarse **:**. Es adecuado usar **::** para distinguirlo de las **pseudo-clases**.   
+
+
+El pseudo-elemento **::selection** modifica el aspecto de la parte es subrayada.
+
+``` css
+    p::selection {
+        color: orangered;
+    }
+```
+<a href="assets/examples/14pseudo-elementos.html" target="_blank">Ejecutar código</a>
+
+**::first-line** selecciona la primera linea del elemento.
+
+``` css
+    p::first-line {
+        color: orangered;
+    }
+```
+<a href="assets/examples/15pseudo-elementos.html" target="_blank">Ejecutar código</a>
+
+
+Puedes encontrar la lista de elementos en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements" target="_blank">developer.mozilla.org</a>.
