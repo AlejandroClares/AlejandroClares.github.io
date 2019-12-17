@@ -245,10 +245,10 @@ Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mo
 
 ## Pseudo-Elementos
 
-Los **pseudo-elementos** permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con **::** aunque tambien pueden usarse **:**. Es adecuado usar **::** para distinguirlo de las **pseudo-clases**.   
+Los **pseudo-elementos** permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con **"::"** aunque tambien pueden usarse **":"**. Es adecuado usar **"::"** para distinguirlo de las **pseudo-clases**.   
 
 
-El pseudo-elemento **::selection** modifica el aspecto de la parte es subrayada.
+El pseudo-elemento **::selection** modifica el aspecto de la parte que es subrayada.
 
 ``` css
     p::selection {
@@ -257,7 +257,7 @@ El pseudo-elemento **::selection** modifica el aspecto de la parte es subrayada.
 ```
 <a href="assets/examples/14pseudo-elementos.html" target="_blank">Ejecutar código</a>
 
-**::first-line** selecciona la primera linea del elemento.
+**::first-line** modifica la primera linea del elemento.
 
 ``` css
     p::first-line {
@@ -267,4 +267,4 @@ El pseudo-elemento **::selection** modifica el aspecto de la parte es subrayada.
 <a href="assets/examples/15pseudo-elementos.html" target="_blank">Ejecutar código</a>
 
 
-Puedes encontrar la lista de elementos en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements" target="_blank">developer.mozilla.org</a>.
+Puedes encontrar la lista de pseudo-elementos en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements" target="_blank">developer.mozilla.org</a>.
