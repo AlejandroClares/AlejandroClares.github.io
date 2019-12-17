@@ -269,3 +269,17 @@ El pseudo-elemento **::selection** modifica el aspecto de la parte que es subray
 
 
 Puedes encontrar la lista de pseudo-elementos en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements" target="_blank">developer.mozilla.org</a>.
+
+## word-wrap
+
+La propiedad **word-wrap** indica como se comportará el texto dentro de su caja. **break-word** hace que el texto no se salga de la caja.
+
+``` css
+    #parrafo1 {
+        word-wrap: normal;
+    }
+    #parrafo2 {
+        word-wrap: break-word;
+    }
+```
+<a href="assets/examples/16word-wrap.html" target="_blank">Ejecutar código</a>
