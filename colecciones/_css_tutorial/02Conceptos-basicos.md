@@ -252,6 +252,7 @@ El pseudo-elemento **::selection** modifica el aspecto de la parte que es subray
 
 ``` css
     p::selection {
+        background-color: black;
         color: orangered;
     }
 ```
