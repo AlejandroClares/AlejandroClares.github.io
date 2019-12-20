@@ -1,0 +1,347 @@
+I"@]<h1 id="conceptos-básicos">Conceptos básicos</h1>
+
+<ul>
+    <li><a href="#prefijos-de-navegacion">Prefijos de navegación</a></li>
+    <li><a href="#border-radius">border-radius</a></li>
+    <li><a href="#box-shadow">box-shadow</a></li>
+    <ul>
+        <li><a href="#blur-y-spread">Blur y Spread</a></li>
+        <li><a href="#valores-negativos">Valores Negativos</a></li>
+        <li><a href="#inset">Inset</a></li>
+        <li><a href="#box-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
+    <li><a href="#efectos-de-transparencia">Efectos de transparencia</a></li>
+    <ul>
+        <li><a href="#colores-rgba">Colores RGBA</a></li>
+        <li><a href="#colores-hls-y-hlsa">Colores HSL y HSLA</a></li>
+    </ul>
+    <li><a href="#text-shadow">text-shadow</a></li>
+    <ul>
+        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
+    <li><a href="#pseudo-clases">Pseudo-Clases</a></li>
+    <li><a href="#pseudo-elementos">Pseudo-Elementos</a></li>
+    <li><a href="#word-wrap">word-wrap</a></li>
+    <li><a href="#font-face">@font-face</a></li>
+</ul>
+
+<p><a name="prefijos-de-navegacion"></a></p>
+
+<h2 id="prefijos-de-navegación">Prefijos de navegación</h2>
+
+<p>Son una forma en la que los fabricantes de navegadores añaden soporte a las nuevas características de css en periodos de prueba o experimentación.</p>
+
+<p>Por ejemplo, el prefijo de Safari y Chrome es -webkit-.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.cuadrado</span> <span class="p">{</span>
+        <span class="nl">-webkit-border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p>La mayoría de navegadores de hoy en día funcionan sin prefijos, pero es esencial conocerlos para la compatibilidad y entendimiento de códigos antiguos.</p>
+
+<p>Escribir varias veces las propiedades para que funcionen en diferentes navegadores puede ser molesto pero es temporal. Mientras los navegadores mejoran, añadirán soporte a las propiedades y eliminarán los prefijos.</p>
+
+<p><img src="assets/image/prefijosCSS3.jpg" alt="Prefijos de navegador" /></p>
+
+<hr />
+
+<p><a name="border-radius"></a></p>
+
+<h2 id="border-radius">border-radius</h2>
+<p>La propiedad <strong>border-radius</strong> nos permite darle esquinas redondeadas a cualquier elemento.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span><span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="assets/examples/00border-radius.html" target="_blank">Ejecutar código</a></p>
+
+<p>Podemos especificar el radio por separado de cada esquina en orden: superior-izquierdo, superior-derecho, inferior-derecho, inferior-izquierdo.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span><span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/01border-radius.html" target="_blank">Ejecutar código</a></p>
+
+<p>Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser la mitad del ancho y alto de la caja.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/02border-radius.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="box-shadow"></a></p>
+
+<h2 id="box-shadow">box-shadow</h2>
+
+<p>La propiedad CSS3 <strong>box-shadow</strong> permite aplicar sombras a los elementos.  <br />
+Los parámetros de esta propiedad son:</p>
+<ul>
+  <li><strong>Desplazamiento horizontal</strong>: Desplaza la sombra hacia la derecha. (Requerido)</li>
+  <li><strong>Desplazamiento vertical</strong>: Desplaza la sombra hacia abajo. (Requerido)</li>
+  <li><strong>Color</strong>: Color de la sombra. El color por defecto es negro. (opcional)</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="blur-y-spread"></a></p>
+
+<h4 id="blur--spread">Blur &amp; Spread</h4>
+<p>Adicionalmente, hay dos propiedades opcionales: <strong>Blur</strong> (desenfoque) y <strong>Spread</strong> (propagación).    <br />
+Estos valores se añaden antes de asignar el color.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/04box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="valores-negativos"></a></p>
+
+<h4 id="valores-negativos">Valores negativos</h4>
+<p>A las propiedades de box-shadow se les permite usar valores negativos.</p>
+<ul>
+  <li><strong>Desplazamiento horizontal</strong>: La sombra se desplaza hacia la <strong>izquierda</strong>.</li>
+  <li><strong>Desplazamiento vertical</strong>: La sombra se desplaza hacia <strong>arriba</strong>.</li>
+  <li><strong>Desenfoque</strong>: Los valores negativos no estan permitidos.</li>
+  <li><strong>Propagación</strong>: La sombra es encogida.</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-10px</span> <span class="m">-10px</span> <span class="m">5px</span> <span class="m">-5px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/05box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="inset"></a></p>
+
+<h4 id="inset">Inset</h4>
+<p>La propiedad <strong>inset</strong> permite crear sombras dentro del elemento.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">5px</span> <span class="m">5px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="assets/examples/06box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="box-shadow-multiples-sombras"></a></p>
+
+<h4 id="múltiples-sombras">Múltiples sombras</h4>
+<p>Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla <strong>separadas por una coma</strong>. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+            <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+            <span class="nl">box-shadow</span><span class="p">:</span> 
+            <span class="nb">inset</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">2px</span> <span class="n">grey</span><span class="p">,</span>
+            <span class="nb">inset</span> <span class="m">-10px</span> <span class="m">-10px</span> <span class="m">2px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="efectos-de-transparencia"></a></p>
+
+<h2 id="efectos-de-transparencia">Efectos de transparencia</h2>
+
+<p><a name="colores-rgba"></a></p>
+
+<h4 id="colores-rgba">Colores RGBA</h4>
+
+<p>Los colores <strong>RGBA</strong> son una extension de RGB, añadiendo un canal <em>Alpha</em> que permite cambiar la opacidad del color. <br />
+Los colores RGBA se especifican como: <strong>rgba(red, green, blue, alpha)</strong>. El parámetro alpha es un número entre 0 y 1, donde 0 es transparente y 1 opaco.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/08rgba.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="colores-hsl-y-hsla"></a></p>
+
+<h4 id="colores-hsl-y-hsla">Colores HSL y HSLA</h4>
+
+<p>Los colores <strong>HSL</strong> se especifican como: <strong>hsl(tono, saturación, luminosidad)</strong>.</p>
+<ul>
+  <li><strong>Tono</strong> es un grado en la rueda de colores que va desde 0 a 360. 0 y 360 es rojo, 120 es verde y 240 el azul.</li>
+  <li><strong>Saturación</strong> es un valor porcentual donde 100% es a todo color.</li>
+  <li><strong>Luminosidad</strong> es un valor porcentual donde 0% es oscuro y 100% es blanco.</li>
+</ul>
+
+<p>Los colores <strong>HSLA</strong> funcionan igual, añadiendo el canal <em>alpha</em>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">120</span><span class="p">,</span> <span class="m">30%</span><span class="p">,</span> <span class="m">50%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/09hsl.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="text-shadow"></a></p>
+
+<h2 id="text-shadow">text-shadow</h2>
+
+<p>La propiedad <strong>text-shadow</strong> permite insertar sombras al texto. La propiedad text-shadow se define: <strong>text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);</strong></p>
+
+<p>El argumento de color tambien es opcional, pero si no se añade el color por defecto sera transparente y no se verá la sombra.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="text-shadow-multiples-sombras"></a></p>
+
+<h4 id="múltiples-sombras-1">Múltiples sombras</h4>
+
+<p>La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">,</span>
+                    <span class="m">20px</span> <span class="m">20px</span> <span class="m">3px</span> <span class="no">orange</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="pseudo-clases"></a></p>
+
+<h2 id="pseudo-clases">Pseudo-Clases</h2>
+
+<p>Las <strong>pseudo-clases</strong> permiten dar estilo a elementos del arbol DOM sin necesidad de usar javascript. Una pseudo clase se define con dos puntos (selector:pseudo-clase)</p>
+
+<p>Las pseudo-clases más comúnes son <strong>:first-child</strong> y <strong>:last-child</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="nt">p</span><span class="nd">:first-child</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/12pseudo-clases.html" target="_blank">Ejecutar código</a></p>
+
+<p>La pseudo-clase <strong>:checked</strong> representa cualquier elemento input de tipo radio, option o checkbox que este marcado.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">input</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="no">limegreen</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"radio"</span><span class="o">]</span><span class="nd">:checked</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="no">orangered</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"checkbox"</span><span class="o">]</span><span class="nd">:checked</span> <span class="p">{</span>
+        <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="no">hotpink</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/13pseudo-clases.html" target="_blank">Ejecutar código</a></p>
+
+<p>Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">developer.mozilla.org</a>.</p>
+
+<hr />
+
+<p><a name="pseudo-elementos"></a></p>
+
+<h2 id="pseudo-elementos">Pseudo-Elementos</h2>
+
+<p>Los <strong>pseudo-elementos</strong> permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con <strong>”::”</strong> aunque tambien pueden usarse <strong>”:”</strong>. Es adecuado usar <strong>”::”</strong> para distinguirlo de las <strong>pseudo-clases</strong>.</p>
+
+<p>El pseudo-elemento <strong>::selection</strong> modifica el aspecto de la parte que es subrayada.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">p</span><span class="nd">::selection</span> <span class="p">{</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/14pseudo-elementos.html" target="_blank">Ejecutar código</a></p>
+
+<p><strong>::first-line</strong> modifica la primera linea del elemento.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">p</span><span class="nd">::first-line</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/15pseudo-elementos.html" target="_blank">Ejecutar código</a></p>
+
+<p>Puedes encontrar la lista de pseudo-elementos en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#Index_of_standard_pseudo-elements" target="_blank">developer.mozilla.org</a>.</p>
+
+<hr />
+
+<p><a name="word-wrap"></a></p>
+
+<h2 id="word-wrap">word-wrap</h2>
+
+<p>La propiedad <strong>word-wrap</strong> indica como se comportará el texto dentro de su caja. <strong>break-word</strong> hace que el texto no se salga de la caja.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nf">#parrafo1</span> <span class="p">{</span>
+        <span class="nl">word-wrap</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#parrafo2</span> <span class="p">{</span>
+        <span class="nl">word-wrap</span><span class="p">:</span> <span class="n">break-word</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/16word-wrap.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="font-face"></a></p>
+
+<h2 id="regla-font-face">Regla @font-face</h2>
+
+<p>Permite cargar fuentes de texto personalizadas. Los navegadores actuales soportan archivos de tipo <strong>Fuentes True Type</strong> (ttf) y <strong>Fuentes OpenType</strong> (otf). <br />
+Cada forma de la familia de la fuente debe ser declarada usando la regla <strong>@font-face</strong>. Primero se debe asignar un nombre a la fuente y despues asignar el fichero de la fuente.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">@font-face</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">miPrimeraFuente</span><span class="p">;</span>
+        <span class="nl">src</span><span class="p">:</span> <span class="sx">url('../Courier_Prime/CourierPrime-Regular.ttf')</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">@font-face</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">miPrimeraFuente</span><span class="p">;</span>
+        <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+        <span class="nl">src</span><span class="p">:</span> <span class="sx">url('../Courier_Prime/CourierPrime-Bold.ttf')</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">@font-face</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">miPrimeraFuente</span><span class="p">;</span>
+        <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+        <span class="nl">src</span><span class="p">:</span> <span class="sx">url('../Courier_Prime/CourierPrime-Italic.ttf')</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'miPrimeraFuente'</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/17font-face.html" target="_blank">Ejecutar código</a></p>
+:ET

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>pseudo-clases</title>
+    <style>
+        input:checked + label {
+            color: limegreen;
+        }
+
+        input[type="radio"]:checked {
+            box-shadow: 0px 0px 0px 3px orangered;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: 0px 0px 0px 3px hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="radio" name="seleccion" id="si">
+        <label for="si">Si</label>
+      
+        <input type="radio" name="seleccion" id="no">
+        <label for="no">No</label>
+
+        <br>
+        <br>
+
+        <input type="checkbox" id="opcional">
+        <label for="opcional">Hazme click!</label>
+    </div>
+</body>
+</html>

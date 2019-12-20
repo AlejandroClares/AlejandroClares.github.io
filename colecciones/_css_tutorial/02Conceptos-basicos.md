@@ -6,6 +6,35 @@ nombre: Conceptos básicos
 ---
 
 # Conceptos básicos
+
+### Menú de navegación
+<ul>
+    <li><a href="#prefijos-de-navegacion">Prefijos de navegación</a></li>
+    <li><a href="#border-radius">border-radius</a></li>
+    <li><a href="#box-shadow">box-shadow</a></li>
+    <ul>
+        <li><a href="#blur-y-spread">Blur y Spread</a></li>
+        <li><a href="#valores-negativos">Valores Negativos</a></li>
+        <li><a href="#inset">Inset</a></li>
+        <li><a href="#box-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
+    <li><a href="#efectos-de-transparencia">Efectos de transparencia</a></li>
+    <ul>
+        <li><a href="#colores-rgba">Colores RGBA</a></li>
+        <li><a href="#colores-hsl-y-hsla">Colores HSL y HSLA</a></li>
+    </ul>
+    <li><a href="#text-shadow">text-shadow</a></li>
+    <ul>
+        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
+    <li><a href="#pseudo-clases">Pseudo-Clases</a></li>
+    <li><a href="#pseudo-elementos">Pseudo-Elementos</a></li>
+    <li><a href="#word-wrap">word-wrap</a></li>
+    <li><a href="#font-face">@font-face</a></li>
+</ul>
+
+<a name="prefijos-de-navegacion"></a>
+
 ## Prefijos de navegación
 
 Son una forma en la que los fabricantes de navegadores añaden soporte a las nuevas características de css en periodos de prueba o experimentación.
@@ -23,6 +52,8 @@ Escribir varias veces las propiedades para que funcionen en diferentes navegador
 ![Prefijos de navegador](assets/image/prefijosCSS3.jpg)
 
 <hr>
+
+<a name="border-radius"></a>
 
 ##  border-radius
 La propiedad **border-radius** nos permite darle esquinas redondeadas a cualquier elemento.
@@ -61,6 +92,8 @@ Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser 
 
 <hr>
 
+<a name="box-shadow"></a>
+
 ## box-shadow
 
 La propiedad CSS3 **box-shadow** permite aplicar sombras a los elementos.    
@@ -79,6 +112,7 @@ Los parámetros de esta propiedad son:
 ```
 <a href="assets/examples/03box-shadow.html" target="_blank">Ejecutar código</a>
    
+<a name="blur-y-spread"></a>
 
 #### Blur & Spread
 Adicionalmente, hay dos propiedades opcionales: **Blur** (desenfoque) y **Spread** (propagación).      
@@ -94,6 +128,7 @@ Estos valores se añaden antes de asignar el color.
 ```
 <a href="assets/examples/04box-shadow.html" target="_blank">Ejecutar código</a>
 
+<a name="valores-negativos"></a>
 
 #### Valores negativos
 A las propiedades de box-shadow se les permite usar valores negativos.  
@@ -112,7 +147,8 @@ A las propiedades de box-shadow se les permite usar valores negativos.
 ```
 <a href="assets/examples/05box-shadow.html" target="_blank">Ejecutar código</a>
    
-   
+<a name="inset"></a>   
+
 #### Inset
 La propiedad **inset** permite crear sombras dentro del elemento.
 
@@ -127,6 +163,7 @@ La propiedad **inset** permite crear sombras dentro del elemento.
 
 <a href="assets/examples/06box-shadow.html" target="_blank">Ejecutar código</a>
     
+<a name="box-shadow-multiples-sombras"></a>
 
 #### Múltiples sombras
 Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla **separadas por una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
@@ -146,7 +183,11 @@ Podemos definir múltiples sombras para una misma caja escribiendo estas en la m
 
 <hr>
 
+<a name="efectos-de-transparencia"></a>
+
 ## Efectos de transparencia
+
+<a name="colores-rgba"></a>
 
 #### Colores RGBA
 
@@ -161,6 +202,8 @@ Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El par�
     }
 ```
 <a href="assets/examples/08rgba.html" target="_blank">Ejecutar código</a>
+
+<a name="colores-hsl-y-hsla"></a>
 
 #### Colores HSL y HSLA
 
@@ -182,6 +225,8 @@ Los colores **HSLA** funcionan igual, añadiendo el canal *alpha*.
 
 <hr>
 
+<a name="text-shadow"></a>
+
 ## text-shadow
 
 La propiedad **text-shadow** permite insertar sombras al texto. La propiedad text-shadow se define: **text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);**
@@ -194,6 +239,8 @@ El argumento de color tambien es opcional, pero si no se añade el color por def
     }
 ```
 <a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a>
+
+<a name="text-shadow-multiples-sombras"></a>
 
 #### Múltiples sombras
 
@@ -208,6 +255,8 @@ La propiedad text-shadow soporta múltiples sombras, separando con comas sus val
 <a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
 
 <hr>
+
+<a name="pseudo-clases"></a>
 
 ## Pseudo-Clases
 
@@ -243,6 +292,8 @@ Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mo
 
 <hr>
 
+<a name="pseudo-elementos"></a>
+
 ## Pseudo-Elementos
 
 Los **pseudo-elementos** permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con **"::"** aunque tambien pueden usarse **":"**. Es adecuado usar **"::"** para distinguirlo de las **pseudo-clases**.   
@@ -272,6 +323,8 @@ Puedes encontrar la lista de pseudo-elementos en <a href="https://developer.mozi
 
 <hr>
 
+<a name="word-wrap"></a>
+
 ## word-wrap
 
 La propiedad **word-wrap** indica como se comportará el texto dentro de su caja. **break-word** hace que el texto no se salga de la caja.
@@ -285,3 +338,33 @@ La propiedad **word-wrap** indica como se comportará el texto dentro de su caja
     }
 ```
 <a href="assets/examples/16word-wrap.html" target="_blank">Ejecutar código</a>
+
+<hr>
+
+<a name="font-face"></a>
+
+## Regla @font-face
+
+Permite cargar fuentes de texto personalizadas. Los navegadores actuales soportan archivos de tipo **Fuentes True Type** (ttf) y **Fuentes OpenType** (otf).   
+Cada forma de la familia de la fuente debe ser declarada usando la regla **@font-face**. Primero se debe asignar un nombre a la fuente y despues asignar el fichero de la fuente.
+
+``` css
+    @font-face {
+        font-family: miPrimeraFuente;
+        src: url('../Courier_Prime/CourierPrime-Regular.ttf');
+    }
+    @font-face {
+        font-family: miPrimeraFuente;
+        font-weight: bold;
+        src: url('../Courier_Prime/CourierPrime-Bold.ttf');
+    }
+    @font-face {
+        font-family: miPrimeraFuente;
+        font-style: italic;
+        src: url('../Courier_Prime/CourierPrime-Italic.ttf');
+    }
+    div {
+        font-family: 'miPrimeraFuente';
+    }
+```
+<a href="assets/examples/17font-face.html" target="_blank">Ejecutar código</a>
