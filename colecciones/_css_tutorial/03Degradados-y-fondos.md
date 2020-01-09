@@ -8,7 +8,9 @@ nombre: Degradados y fondos
 # Degradados y fondos
 ## Degradados lineales
 
-Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos. Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas. También se puede fijar un punto de partida y direccion junto el efecto degradado.
+Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos.   
+Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas.   
+También se puede fijar un punto de partida y direccion junto el efecto degradado.
 
 ``` css
     div {
