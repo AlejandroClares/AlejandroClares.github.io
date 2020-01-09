@@ -2,7 +2,7 @@
 author: Alejandro
 layout: default
 title: CSS3 - Tutorial - Degradados y fondos
-nombre: Conceptos básicos
+nombre: Degradados y fondos
 ---
 
 # Degradados y fondos
