@@ -101,7 +101,8 @@ La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamañ
     div {
         width: 300px;
         height: 300px;
-        background: radial-gradient(circle farthest-side at 20% 50%, gray, blue, brown, orange, yellow );
+        background: radial-gradient(circle farthest-side at 20% 50%, gray, blue,
+         brown, orange, yellow );
     }
 ```
 <a href="assets/examples/24radial-gradient.html" target="_blank">Ejecutar código</a>
