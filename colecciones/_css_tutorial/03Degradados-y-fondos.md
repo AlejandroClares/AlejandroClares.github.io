@@ -6,7 +6,7 @@ nombre: Degradados y fondos
 ---
 
 # Degradados y fondos
-## Degradados lineales
+## linear-gradient
 
 Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos.   
 Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas.   
@@ -47,3 +47,42 @@ Las posiciones de las paradas de colores pueden ser especificadas en cada color.
 <a href="assets/examples/20linear-gradient.html" target="_blank">Ejecutar código</a>
 
 Adicionalmente a los **porcentajes**, se puede utilizar **px**, **em** entre otros
+
+#### Dirección del degradado
+
+Podemos definir la dirección en la que se ejecuta el degradado. Los valores soportados son **left**, **right**, **top** y **bottom**. Tambien podemos hacer combinaciones para especificar la dirección, como por ejemplo **bottom right**.
+
+``` css
+    div {
+        width: 400px;
+        height: 100px;
+        background: linear-gradient(left, red, yellow);
+    }
+```
+<a href="assets/examples/21linear-gradient.html" target="_blank">Ejecutar código</a>
+
+#### El ángulo del degradado
+
+Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es **0deg**. Un degradado horizontal, de izquierda hacia la derecha son **90deg**
+
+``` css
+    div {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        background: linear-gradient(90deg, red, yellow);
+    }
+```
+<a href="assets/examples/22linear-gradient.html" target="_blank">Ejecutar código</a>
+
+#### repeating-linear-gradient
+
+La función **repeating-linear-gradient** nos permite repetir un degradado lineal.
+
+``` css
+    div {
+        width: 300px;
+        height: 300px;
+        background: repeating-linear-gradient(red, yellow 50px);
+    }
+```
