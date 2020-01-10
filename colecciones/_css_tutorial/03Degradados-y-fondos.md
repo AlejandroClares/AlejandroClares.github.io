@@ -86,3 +86,8 @@ La función **repeating-linear-gradient** nos permite repetir un degradado linea
         background: repeating-linear-gradient(red, yellow 50px);
     }
 ```
+<a href="assets/examples/23linear-gradient.html" target="_blank">Ejecutar código</a>
+
+## radial-gradient
+
+El degradado **radial** se define por su centro y se deben definir al menos dos paradas.
