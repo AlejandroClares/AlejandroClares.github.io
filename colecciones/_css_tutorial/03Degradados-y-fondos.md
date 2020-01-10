@@ -95,7 +95,7 @@ El degradado **radial** se define por su centro y se deben definir al menos dos 
 La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamaño* at *posicion*, *color*, ...)
 - **Forma** (Opcional): Se puede definir como un circulo o un ellipse (por defecto)
 - **Tamaño** (Opcional): Puede ser *farthest-corner* (por defecto), *closest-side*, *closest-corner*, *farthest-side*. Tambien se pueden usar valores numéricos, como pixeles o em
-- **Posición**: Se usan dos valores porcentuales o valores predefinidos como *top* o *right* para definir la posición, por defecto es *center*. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo
+- **Posición**: Se usan dos valores porcentuales o valores predefinidos como *top* o *right* para definir la posición, por defecto es *center*. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.
 
 ``` css
     div {
