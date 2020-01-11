@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>background-clip</title>
+    <style>
+    .original {
+       border: 20px solid rgba(255, 0, 0, 0.3);
+       width: 300px;
+       position: absolute;
+       top: 20px;
+       left: 10%;
+       background-color: yellow;
+    }
+    .padding-box {
+       border: 20px solid rgba(255, 0, 0, 0.3);
+       width: 300px;
+       position: absolute;
+       top: 20px;
+       left: 50%;
+       background-color: yellow;
+       background-clip: padding-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="original">Usando rgba sin background-clip</div>
+    <div class="padding-box">Usando rgba con background-clip</div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+    libero dolor, accumsan id efficitur ut, malesuada non massa. 
+    Mauris egestas volutpat purus, eu tincidunt quam mattis at. Ut 
+    at lobortis dui. Ut ac sollicitudin risus. Aenean rutrum, erat 
+    tempor vehicula bibendum, magna ligula pharetra dui, vel consequat 
+    lorem ex at felis. Lorem ipsum dolor sit amet, consectetur adipiscing 
+    elit. Vivamus mauris orci, pharetra ac fringilla in, finibus eu ipsum.
+    Sed lorem felis, condimentum eget diam ultrices, egestas vehicula
+    urna. Maecenas tincidunt mattis arcu, sed lobortis urna hendrerit id. 
+
+</body>
+</html>

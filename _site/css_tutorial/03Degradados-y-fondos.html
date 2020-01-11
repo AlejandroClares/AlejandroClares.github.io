@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 - Tutorial - Degradados y fondos</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+    
+    <a href="/" >
+        Inicio
+    </a>
+    
+    <a href="/blog.html" >
+        Blog
+    </a>
+    
+</nav>
+      <main>
+        <h1 id="degradados-y-fondos">Degradados y fondos</h1>
+<h2 id="linear-gradient">linear-gradient</h2>
+
+<p>Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos. <br />
+Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas. <br />
+También se puede fijar un punto de partida y direccion junto el efecto degradado.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/18linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<p>Se pueden utilizar nombres de colores, calores hexadecimales, colores RGB o HSL para definir el color del radiante.</p>
+
+<h4 id="paradas-de-colores">Paradas de colores</h4>
+<p>Los colores pueden ser añadidos uno tras otros, separados por comas. El navegador determina la posición de cada color. Las paradas de colores se ejecutan de arriba a abajo.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">,</span> <span class="no">blue</span><span class="p">,</span> <span class="no">green</span><span class="p">,</span> <span class="no">pink</span><span class="p">,</span> <span class="no">black</span><span class="p">,</span> <span class="no">white</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/19linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<p>Las posiciones de las paradas de colores pueden ser especificadas en cada color. Si se utiliza la misma posición de parada para uno o más colores se creara una linea delgada entre ellos.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="no">red</span> <span class="m">10%</span><span class="p">,</span> <span class="no">yellow</span> <span class="m">50%</span><span class="p">,</span> <span class="no">blue</span> <span class="m">50%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/20linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<p>Adicionalmente a los <strong>porcentajes</strong>, se puede utilizar <strong>px</strong>, <strong>em</strong> entre otros</p>
+
+<h4 id="dirección-del-degradado">Dirección del degradado</h4>
+
+<p>Podemos definir la dirección en la que se ejecuta el degradado. Los valores soportados son <strong>left</strong>, <strong>right</strong>, <strong>top</strong> y <strong>bottom</strong>. Tambien podemos hacer combinaciones para especificar la dirección, como por ejemplo <strong>bottom right</strong>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="nb">left</span><span class="p">,</span> <span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/21linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<h4 id="el-ángulo-del-degradado">El ángulo del degradado</h4>
+
+<p>Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es <strong>0deg</strong>. Un degradado horizontal, de izquierda hacia la derecha son <strong>90deg</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">90deg</span><span class="p">,</span> <span class="no">red</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/22linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<h4 id="repeating-linear-gradient">repeating-linear-gradient</h4>
+
+<p>La función <strong>repeating-linear-gradient</strong> nos permite repetir un degradado lineal.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">repeating-linear-gradient</span><span class="p">(</span><span class="no">red</span><span class="p">,</span> <span class="no">yellow</span> <span class="m">50px</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/23linear-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<h2 id="radial-gradient">radial-gradient</h2>
+
+<p>El degradado <strong>radial</strong> se define por su centro y se deben definir al menos dos paradas.</p>
+
+<p>La sintaxis css del degradado radial se ve así: radial-gradient(<em>forma</em> <em>tamaño</em> at <em>posicion</em>, <em>color</em>, …)</p>
+<ul>
+  <li><strong>Forma</strong> (Opcional): Se puede definir como un circulo o un ellipse (por defecto)</li>
+  <li><strong>Tamaño</strong> (Opcional): Puede ser <em>farthest-corner</em> (por defecto), <em>closest-side</em>, <em>closest-corner</em>, <em>farthest-side</em>. Tambien se pueden usar valores numéricos, como pixeles o em</li>
+  <li><strong>Posición</strong>: Se usan dos valores porcentuales o valores predefinidos como <em>top</em> o <em>right</em> para definir la posición, por defecto es <em>center</em>. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="n">radial-gradient</span><span class="p">(</span><span class="nb">circle</span> <span class="n">farthest-side</span> <span class="n">at</span> <span class="m">20%</span> <span class="m">50%</span><span class="p">,</span> <span class="no">gray</span><span class="p">,</span> <span class="no">blue</span><span class="p">,</span>
+                    <span class="no">brown</span><span class="p">,</span> <span class="no">orange</span><span class="p">,</span> <span class="no">yellow</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/24radial-gradient.html" target="_blank">Ejecutar código</a></p>
+
+<h2 id="background-size">background-size</h2>
+
+<p>La propiedad <strong>background-size</strong> permite especificar el tamaño de las imagenes de fondo utilizando longitudes o porcentajes.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nf">#original</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">425px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">450px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#bg-size</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">425px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">450px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+        <span class="nl">background-size</span><span class="p">:</span> <span class="m">100px</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/25background-size.html" target="_blank">Ejecutar código</a></p>
+
+<p>Otros dos valores posibles para el tamaño de fondo son las palabras clave <strong>“contain”</strong> y <strong>“cover”</strong>.</p>
+
+<h4 id="el-valor-contain">El valor contain</h4>
+
+<p>El valor <strong>contain</strong> escala la imagen de manera que se ajuste al contenedor, es decir, la imagen crecerá o encogerá proporcionalmente sin exceder las dimensiones del contenedor</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nf">#original</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#contain</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+        <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/26background-size.html" target="_blank">Ejecutar código</a></p>
+
+<h4 id="el-valor-cover">El valor cover</h4>
+
+<p>Usando el valor <strong>cover</strong> la imagen se escala al mayor tamaño posible sin estirarla. La imagen podrá ser recortada vertical u horizontalmente si el tamaño difiere con el contenedor.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nf">#contain</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+        <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#cover</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="sx">url('../image/css3.png')</span> <span class="nb">no-repeat</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+        <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/27background-size.html" target="_blank">Ejecutar código</a></p>
+
+<h2 id="background-clip">background-clip</h2>
+
+<p>La propiedad <strong>background-clip</strong> especifíca el área de dibujo del fondo. Acepta tres valores:</p>
+
+<ul>
+  <li><strong>border-box</strong> (predeterminado): El fondo es dibujado hasta el exterior del borde.</li>
+  <li><strong>padding-box</strong>: El fondo es dibujado hasta el extremo exterior del relleno.</li>
+  <li><strong>content-box</strong>: El fondo es dibujado dentro de la caja contenedora.</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">p</span> <span class="p">{</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">5px</span> <span class="no">navy</span><span class="p">;</span>
+        <span class="nl">border-style</span><span class="p">:</span> <span class="nb">dotted</span> <span class="nb">double</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.border-box</span> <span class="p">{</span> <span class="nl">background-clip</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nc">.padding-box</span> <span class="p">{</span> <span class="nl">background-clip</span><span class="p">:</span> <span class="n">padding-box</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nc">.content-box</span> <span class="p">{</span> <span class="nl">background-clip</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/28background-clip.html" target="_blank">Ejecutar código</a></p>
+
+<h4 id="bordes-transparentes">Bordes transparentes</h4>
+
+<p>Establecer un borde transparente sobre un elemento revelará el propio fondo del elemento bajo el borde. Al fijar la propiedad <strong>background-clip</strong> a <strong>padding-box</strong>, los bordes serán hechos transparentes.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.original</span> <span class="p">{</span>
+       <span class="nl">border</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.3</span><span class="p">);</span>
+       <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+       <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+       <span class="nl">top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+       <span class="nl">left</span><span class="p">:</span> <span class="m">10%</span><span class="p">;</span>
+       <span class="nl">background-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.padding-box</span> <span class="p">{</span>
+       <span class="nl">border</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.3</span><span class="p">);</span>
+       <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+       <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+       <span class="nl">top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+       <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+       <span class="nl">background-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+       <span class="nl">background-clip</span><span class="p">:</span> <span class="n">padding-box</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/29background-clip.html" target="_blank">Ejecutar código</a></p>
+
+      </main>
+  </div>
+  </body>
+</html>

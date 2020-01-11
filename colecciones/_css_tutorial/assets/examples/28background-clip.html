@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>background-clip</title>
+    <style>
+    p {
+        border: 5px navy;
+        border-style: dotted double;
+        margin: 2em;
+        padding: 2em;
+        background: orange;
+    }
+    .border-box { background-clip: border-box; }
+    .padding-box { background-clip: padding-box; }
+    .content-box { background-clip: content-box; }
+    </style>
+</head>
+<body>
+    <p class="border-box">El color se extiende hasta el exterior del borde</p>
+    <p class="padding-box">El color se extiende hasta el exterior del relleno</p>
+    <p class="content-box">El color se extiende solo en la caja contenedora</p>
+</body>
+</html>

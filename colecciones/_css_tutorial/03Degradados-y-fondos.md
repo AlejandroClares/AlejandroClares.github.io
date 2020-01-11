@@ -106,3 +106,121 @@ La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamañ
     }
 ```
 <a href="assets/examples/24radial-gradient.html" target="_blank">Ejecutar código</a>
+
+## background-size
+
+La propiedad **background-size** permite especificar el tamaño de las imagenes de fondo utilizando longitudes o porcentajes.
+
+``` css
+    #original {
+        float: left;
+        width: 425px;
+        height: 450px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+    }
+    #bg-size {
+        float: left;
+        width: 425px;
+        height: 450px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+        background-size: 100px 100px;
+    }
+```
+<a href="assets/examples/25background-size.html" target="_blank">Ejecutar código</a>
+
+Otros dos valores posibles para el tamaño de fondo son las palabras clave **"contain"** y **"cover"**.   
+
+#### El valor contain
+
+El valor **contain** escala la imagen de manera que se ajuste al contenedor, es decir, la imagen crecerá o encogerá proporcionalmente sin exceder las dimensiones del contenedor
+
+``` css
+    #original {
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+    }
+    #contain {
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+```
+<a href="assets/examples/26background-size.html" target="_blank">Ejecutar código</a>
+
+#### El valor cover
+
+Usando el valor **cover** la imagen se escala al mayor tamaño posible sin estirarla. La imagen podrá ser recortada vertical u horizontalmente si el tamaño difiere con el contenedor.
+``` css
+    #contain {
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+    #cover {
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: url('../image/css3.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+```
+<a href="assets/examples/27background-size.html" target="_blank">Ejecutar código</a>
+
+## background-clip
+
+La propiedad **background-clip** especifíca el área de dibujo del fondo. Acepta tres valores:
+
+- **border-box** (predeterminado): El fondo es dibujado hasta el exterior del borde.
+- **padding-box**: El fondo es dibujado hasta el extremo exterior del relleno.
+- **content-box**: El fondo es dibujado dentro de la caja contenedora.
+
+``` css
+    p {
+        border: 5px navy;
+        border-style: dotted double;
+        margin: 2em;
+        padding: 2em;
+        background: orange;
+    }
+    .border-box { background-clip: border-box; }
+    .padding-box { background-clip: padding-box; }
+    .content-box { background-clip: content-box; }
+```
+<a href="assets/examples/28background-clip.html" target="_blank">Ejecutar código</a>
+
+#### Bordes transparentes
+
+Establecer un borde transparente sobre un elemento revelará el propio fondo del elemento bajo el borde. Al fijar la propiedad **background-clip** a **padding-box**, los bordes serán hechos transparentes.
+
+``` css
+    .original {
+       border: 20px solid rgba(255, 0, 0, 0.3);
+       width: 300px;
+       position: absolute;
+       top: 20px;
+       left: 10%;
+       background-color: yellow;
+    }
+    .padding-box {
+       border: 20px solid rgba(255, 0, 0, 0.3);
+       width: 300px;
+       position: absolute;
+       top: 20px;
+       left: 50%;
+       background-color: yellow;
+       background-clip: padding-box;
+    }
+```
+<a href="assets/examples/29background-clip.html" target="_blank">Ejecutar código</a>
