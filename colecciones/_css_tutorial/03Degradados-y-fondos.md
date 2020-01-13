@@ -6,6 +6,32 @@ nombre: Degradados y fondos
 ---
 
 # Degradados y fondos
+
+### Menú de navegación
+<ul>
+    <li><a href="linear-gradient">linear-gradient</a></li>
+    <ul>
+        <li><a href="direccion-del-degradado">Dirección del degradado</a></li>
+        <li><a href="el-angulo-del-degradado">El ángulo del degradado</a></li>
+        <li><a href="paradas-de-colores">Paradas de colores</a></li>
+        <li><a href="repeating-linear-gradient">repeating-linear-gradient</a></li>
+    </ul>
+    <li><a href="radial-gradient">radial-gradient</a></li>
+    <li><a href="background-size">background-size</a></li>
+    <ul>
+        <li><a href="el-valor-contain">El valor contain</a></li>
+        <li><a href="el-valor-cover">El valor cover</a></li>
+    </ul>
+    <li><a href="background-clip">background-clip</a></li>
+    <ul>
+        <li><a href="bordes-transparentes">Bodes transparentes</a></li>
+    </ul>
+    <li><a href="multiples-fondos">Múltiples fondos</a></li>
+    <li><a href="opacity">Opacity</a></li>
+</ul>
+
+<a name="linear-gradient"></a>
+
 ## linear-gradient
 
 Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos.   
@@ -22,6 +48,8 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 <a href="assets/examples/18linear-gradient.html" target="_blank">Ejecutar código</a>
 
 Se pueden utilizar nombres de colores, calores hexadecimales, colores RGB o HSL para definir el color del radiante.
+
+<a name="paradas-de-colores"></a>
 
 #### Paradas de colores
 Los colores pueden ser añadidos uno tras otros, separados por comas. El navegador determina la posición de cada color. Las paradas de colores se ejecutan de arriba a abajo.
@@ -48,6 +76,8 @@ Las posiciones de las paradas de colores pueden ser especificadas en cada color.
 
 Adicionalmente a los **porcentajes**, se puede utilizar **px**, **em** entre otros
 
+<a name="direccion-del-degradado"></a>
+
 #### Dirección del degradado
 
 Podemos definir la dirección en la que se ejecuta el degradado. Los valores soportados son **left**, **right**, **top** y **bottom**. Tambien podemos hacer combinaciones para especificar la dirección, como por ejemplo **bottom right**.
@@ -60,6 +90,8 @@ Podemos definir la dirección en la que se ejecuta el degradado. Los valores sop
     }
 ```
 <a href="assets/examples/21linear-gradient.html" target="_blank">Ejecutar código</a>
+
+<a name="el-angulo-del-degradado"></a>
 
 #### El ángulo del degradado
 
@@ -75,6 +107,8 @@ Como alternativa a las direcciones predefinidas, podemos controlar la dirección
 ```
 <a href="assets/examples/22linear-gradient.html" target="_blank">Ejecutar código</a>
 
+<a name="repeating-linear-gradient"></a>
+
 #### repeating-linear-gradient
 
 La función **repeating-linear-gradient** nos permite repetir un degradado lineal.
@@ -87,6 +121,8 @@ La función **repeating-linear-gradient** nos permite repetir un degradado linea
     }
 ```
 <a href="assets/examples/23linear-gradient.html" target="_blank">Ejecutar código</a>
+
+<a name="radial-gradient"></a>
 
 ## radial-gradient
 
@@ -106,6 +142,8 @@ La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamañ
     }
 ```
 <a href="assets/examples/24radial-gradient.html" target="_blank">Ejecutar código</a>
+
+<a name="background-size"></a>
 
 ## background-size
 
@@ -132,6 +170,8 @@ La propiedad **background-size** permite especificar el tamaño de las imagenes 
 
 Otros dos valores posibles para el tamaño de fondo son las palabras clave **"contain"** y **"cover"**.   
 
+<a name="el-valor-contain"></a>
+
 #### El valor contain
 
 El valor **contain** escala la imagen de manera que se ajuste al contenedor, es decir, la imagen crecerá o encogerá proporcionalmente sin exceder las dimensiones del contenedor
@@ -154,6 +194,8 @@ El valor **contain** escala la imagen de manera que se ajuste al contenedor, es 
     }
 ```
 <a href="assets/examples/26background-size.html" target="_blank">Ejecutar código</a>
+
+<a name="el-valor-cover"></a>
 
 #### El valor cover
 
@@ -178,6 +220,8 @@ Usando el valor **cover** la imagen se escala al mayor tamaño posible sin estir
 ```
 <a href="assets/examples/27background-size.html" target="_blank">Ejecutar código</a>
 
+<a name="background-clip"></a>
+
 ## background-clip
 
 La propiedad **background-clip** especifíca el área de dibujo del fondo. Acepta tres valores:
@@ -199,6 +243,8 @@ La propiedad **background-clip** especifíca el área de dibujo del fondo. Acept
     .content-box { background-clip: content-box; }
 ```
 <a href="assets/examples/28background-clip.html" target="_blank">Ejecutar código</a>
+
+<a name="bordes-transparentes"></a>
 
 #### Bordes transparentes
 
@@ -225,6 +271,8 @@ Establecer un borde transparente sobre un elemento revelará el propio fondo del
 ```
 <a href="assets/examples/29background-clip.html" target="_blank">Ejecutar código</a>
 
+<a name="multiples-fondos"></a>
+
 ## Múltiples fondos
 
 Múltiples imágenes de fondo pueden ser especificadas en la propiedad **background-image**. La primera imagen se coloca encima de la segunda.
@@ -248,6 +296,8 @@ Tambien podemos usar la propiedad abreviada **background**.
     }
 ```
 <a href="assets/examples/30multiples-fondos.html" target="_blank">Ejecutar código</a>
+
+<a name="opacity"></a>
 
 ## Opacity
 
