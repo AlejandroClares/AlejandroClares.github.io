@@ -248,3 +248,22 @@ Tambien podemos usar la propiedad abreviada **background**.
     }
 ```
 <a href="assets/examples/30multiples-fondos.html" target="_blank">Ejecutar código</a>
+
+## Opacity
+
+La propiedad **opacity** permite añadir opacidad a cualquier elemento.
+``` css
+    .img {
+        width: 200px;
+        height: 200px;
+        background: url('../image/css3-logo.png') no-repeat;
+        opacity: 0.3;
+        float: left;
+    }
+    .text {
+        width: 400px;        
+        opacity: 0.3;
+        float: left;
+    }
+```
+<a href="assets/examples/31opacity.html" target="_blank">Ejecutar código</a>
