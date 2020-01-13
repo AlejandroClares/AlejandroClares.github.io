@@ -109,7 +109,7 @@ La propiedad **transform-origin** permite cambiar la posición de los **elemento
 
 #### translate
 
-El método translate() mueve un elemento desde su posición actual. Los valores positivos mueven el elemento hacia la derecha y hacia abajo, mientras que los valores negativos lo mueven hacian la izquierda y hacia arriba.
+El método **translate()** mueve un elemento desde su posición actual. Los valores positivos mueven el elemento hacia la derecha y hacia abajo, mientras que los valores negativos lo mueven hacian la izquierda y hacia arriba.
 ``` css
     .translate {
         width: 300px;
