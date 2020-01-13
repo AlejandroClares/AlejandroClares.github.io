@@ -9,25 +9,25 @@ nombre: Degradados y fondos
 
 ### Menú de navegación
 <ul>
-    <li><a href="linear-gradient">linear-gradient</a></li>
+    <li><a href="#linear-gradient">linear-gradient</a></li>
     <ul>
-        <li><a href="direccion-del-degradado">Dirección del degradado</a></li>
-        <li><a href="el-angulo-del-degradado">El ángulo del degradado</a></li>
-        <li><a href="paradas-de-colores">Paradas de colores</a></li>
-        <li><a href="repeating-linear-gradient">repeating-linear-gradient</a></li>
+        <li><a href="#direccion-del-degradado">Dirección del degradado</a></li>
+        <li><a href="#el-angulo-del-degradado">El ángulo del degradado</a></li>
+        <li><a href="#paradas-de-colores">Paradas de colores</a></li>
+        <li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li>
     </ul>
-    <li><a href="radial-gradient">radial-gradient</a></li>
-    <li><a href="background-size">background-size</a></li>
+    <li><a href="#radial-gradient">radial-gradient</a></li>
+    <li><a href="#background-size">background-size</a></li>
     <ul>
-        <li><a href="el-valor-contain">El valor contain</a></li>
-        <li><a href="el-valor-cover">El valor cover</a></li>
+        <li><a href="#el-valor-contain">El valor contain</a></li>
+        <li><a href="#el-valor-cover">El valor cover</a></li>
     </ul>
-    <li><a href="background-clip">background-clip</a></li>
+    <li><a href="#background-clip">background-clip</a></li>
     <ul>
-        <li><a href="bordes-transparentes">Bodes transparentes</a></li>
+        <li><a href="#bordes-transparentes">Bodes transparentes</a></li>
     </ul>
-    <li><a href="multiples-fondos">Múltiples fondos</a></li>
-    <li><a href="opacity">Opacity</a></li>
+    <li><a href="#multiples-fondos">Múltiples fondos</a></li>
+    <li><a href="#opacity">Opacity</a></li>
 </ul>
 
 <a name="linear-gradient"></a>
