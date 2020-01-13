@@ -238,7 +238,7 @@ Múltiples imágenes de fondo pueden ser especificadas en la propiedad **backgro
         background-repeat: no-repeat;
     }
 ```
-Tambien podemos usar la propiedad abreviada **background**
+Tambien podemos usar la propiedad abreviada **background**.
 ``` css
     div {
         width: 680px;
