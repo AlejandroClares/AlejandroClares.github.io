@@ -16,7 +16,7 @@ La propiedad **transition** permite definir la transición entre dos estados de 
 - **transition-timing-function**: Especifica cómo el ritmo de la transición cambia sobre su duración.
 - **transition-delay**: Especifica un retraso para el efecto de la transición.
 
-Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition**, siguiendo el orden anterior. **transition: <property> <duration> <timing-function> <delay>;**.
+Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition**, siguiendo el orden anterior. **transition: property duration timing-function delay;**.
 
 ``` css
     div {
@@ -67,7 +67,7 @@ Una transformación es un efecto que permite a un elemento cambiar su forma, tam
 
 #### rotate
 
-El método rotate() rota un elemento en sentido de las agujas del reloj o en sentido contrario si se usan valores negativos.
+El método **rotate()** rota un elemento en sentido de las agujas del reloj o en sentido contrario si se usan valores negativos.
 
 ``` css
     div {
