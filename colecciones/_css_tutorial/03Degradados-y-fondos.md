@@ -244,7 +244,7 @@ Tambien podemos usar la propiedad abreviada **background**.
         width: 680px;
         height: 330px;
         background: url('../image/css3-logo.png') no-repeat right bottom,
-                        url('../image/code.jpg') no-repeat left top;
+                    url('../image/code.jpg') no-repeat left top;
     }
 ```
 <a href="assets/examples/30multiples-fondos.html" target="_blank">Ejecutar código</a>
