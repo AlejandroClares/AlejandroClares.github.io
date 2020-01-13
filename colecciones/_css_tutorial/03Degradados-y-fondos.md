@@ -224,3 +224,27 @@ Establecer un borde transparente sobre un elemento revelará el propio fondo del
     }
 ```
 <a href="assets/examples/29background-clip.html" target="_blank">Ejecutar código</a>
+
+## Múltiples fondos
+
+Múltiples imágenes de fondo pueden ser especificadas en la propiedad **background-image**. La primera imagen se coloca encima de la segunda.
+
+``` css
+    div {
+        width: 680px;
+        height: 330px;
+        background-image: url('../image/css3-logo.png'), url('../image/code.jpg');
+        background-position: right bottom, left top;
+        background-repeat: no-repeat;
+    }
+```
+Tambien podemos usar la propiedad abreviada **background**
+``` css
+    div {
+        width: 680px;
+        height: 330px;
+        background: url('../image/css3-logo.png') no-repeat right bottom,
+                        url('../image/code.jpg') no-repeat left top;
+    }
+```
+<a href="assets/examples/30multiples-fondos.html" target="_blank">Ejecutar código</a>
