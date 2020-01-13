@@ -11,9 +11,9 @@ nombre: Degradados y fondos
 <ul>
     <li><a href="#linear-gradient">linear-gradient</a></li>
     <ul>
+        <li><a href="#paradas-de-colores">Paradas de colores</a></li>
         <li><a href="#direccion-del-degradado">Dirección del degradado</a></li>
         <li><a href="#el-angulo-del-degradado">El ángulo del degradado</a></li>
-        <li><a href="#paradas-de-colores">Paradas de colores</a></li>
         <li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li>
     </ul>
     <li><a href="#radial-gradient">radial-gradient</a></li>
