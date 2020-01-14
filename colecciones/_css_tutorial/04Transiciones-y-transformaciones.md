@@ -152,5 +152,15 @@ El método **scale()** aumenta o reduce el tamaño de un elemento de acuerdo a d
 #### Múltiples transformaciones
 
 Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas con un espacio
-
+``` css
+    .transform {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background-color: orangered;
+        transform: translate(100px) rotate(20deg);
+    }
+```
 <a href="assets/examples/39transform.html" target="_blank">Ejecutar código</a>
