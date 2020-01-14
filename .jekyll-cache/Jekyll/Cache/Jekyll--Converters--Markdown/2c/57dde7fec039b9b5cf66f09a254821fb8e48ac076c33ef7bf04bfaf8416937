@@ -1,25 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>CSS - Tutorial - Introducción a CSS3</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-    
-    <a href="/" >
-        Inicio
-    </a>
-    
-    <a href="/blog.html" >
-        Blog
-    </a>
-    
-</nav>
-      <main>
-        <h1 id="introducción-a-css3">Introducción a CSS3</h1>
+I"%<h1 id="introducción-a-css3">Introducción a CSS3</h1>
 
 <p>CSS3 es el último estándar de css y es totalmente compatible con versiones anteriores de css.
 Algunos de las novedades más importantes son:</p>
@@ -42,8 +21,4 @@ Algunos de las novedades más importantes son:</p>
 <p><a href="/css_tutorial/03Degradados-y-fondos.html">Degradados y fondos</a></p>
 
 <p><a href="/css_tutorial/04Transiciones-y-transformaciones.html">Transiciones y transformaciones</a></p>
-
-      </main>
-  </div>
-  </body>
-</html>
+:ET

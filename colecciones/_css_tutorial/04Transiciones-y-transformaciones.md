@@ -9,14 +9,14 @@ nombre: Transiciones y transformaciones
 
 ## transition
 
-La propiedad **transition** permite definir la transición entre dos estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando **pseudo-clases**.
+La propiedad **transition** permite definir la transición entre dos estados de un elemento. Hay diferentes estados, que pueden ser definidos utilizando <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">**pseudo-clases**</a>.
 
 - **transition-property**: Especifica la propiedad a ser transicionada.
 - **transition-duration**: Duración de la transición.
 - **transition-timing-function**: Especifica cómo el ritmo de la transición cambia sobre su duración.
 - **transition-delay**: Especifica un retraso para el efecto de la transición.
 
-Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition**, siguiendo el orden anterior. **transition: property duration timing-function delay;**.
+Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition**, siguiendo el orden anterior.
 
 ``` css
     div {
@@ -96,20 +96,12 @@ La propiedad **transform-origin** permite cambiar la posición de los **elemento
         transform-origin: 0% 50%;
         transform: rotate(5deg);
     }
-    .empty {
-        width: 300px;
-        height: 100px;
-        position: absolute;
-        top: 100px;
-        left: 100px;
-        border: 1px solid black;
-    }
 ```
 <a href="assets/examples/35transform.html" target="_blank">Ejecutar código</a>
 
 #### translate
 
-El método **translate()** mueve un elemento desde su posición actual. Los valores positivos mueven el elemento hacia la derecha y hacia abajo, mientras que los valores negativos lo mueven hacian la izquierda y hacia arriba.
+El método **translate()** mueve un elemento desde su posición actual. Los valores positivos mueven el elemento hacia la derecha y hacia abajo, mientras que los valores negativos lo mueven hacia la izquierda y hacia arriba.
 ``` css
     .translate {
         width: 300px;
@@ -120,13 +112,45 @@ El método **translate()** mueve un elemento desde su posición actual. Los valo
         background-color: orangered;
         transform: translate(100px, 50px);
     }
-    .empty {
+```
+<a href="assets/examples/36transform.html" target="_blank">Ejecutar código</a>
+
+#### skew
+
+Sesga un elemento a lo largo del eje-x y eje-y. El segundo parámetro es opcional y por defecto será 0.
+``` css
+    .transform {
         width: 300px;
         height: 100px;
         position: absolute;
         top: 100px;
         left: 100px;
-        border: 1px solid black;
+        background-color: orangered;
+        transform: skew(30deg);
     }
 ```
-<a href="assets/examples/36transform.html" target="_blank">Ejecutar código</a>
+<a href="assets/examples/37transform.html" target="_blank">Ejecutar código</a>
+
+#### scale
+
+El método **scale()** aumenta o reduce el tamaño de un elemento de acuerdo a dos parámetros para el ancho y el alto. El valor 1 equivale al tamaño normal, 2 para el doble del tamaño y asi sucesivamente. Si solo se pasa un parámetro, este se aplicará tanto para el ancho como el alto.
+
+``` css
+    .transform {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background-color: orangered;
+        transform: scale(0.7);
+    }
+``` 
+
+<a href="assets/examples/38transform.html" target="_blank">Ejecutar código</a>
+
+#### Múltiples transformaciones
+
+Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas con un espacio
+
+<a href="assets/examples/39transform.html" target="_blank">Ejecutar código</a>
