@@ -164,3 +164,140 @@ Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas 
     }
 ```
 <a href="assets/examples/39transform.html" target="_blank">Ejecutar código</a>
+
+## Animaciones
+
+Una animación permite a un elemento cambiar gradualmente de un estilo a otro.
+
+#### @keyframes
+
+Los **@keyframes** registran los estilos que el elemento tendra en ciertos tiempos. Cuando se especifican estilos CSS dentro de la regla @keyframe, la animación cambiara gradualmente desde el estilo actual al nuevo estilo en el tiempo especificado.
+
+``` css
+    @keyframes ejemplo {
+        0% {background-color: red;}
+        50% {background-color: yellow;}
+        70% {background-color: blue;}
+        100% {background-color: green;}
+    }
+```
+
+En el ejemplo anterior el elemento comenzara con un fondo negro, cuando la animación esta 50% completada tendra el color amarillo.
+
+Como una alternativa de uso a los valores porcentuales se pueden usar las palabras clave **from** (0%) y **to** (100%).
+
+Para que una animación funcione debemos asignarle a un elemento el nombre y la duración de la animación
+``` css
+    div {
+        width: 300px;
+        height: 100px;
+        background-color: black;
+        animation-name: ejemplo;
+        animation-duration: 4s;
+    }
+    @keyframes ejemplo {
+        0% {background-color: red;}
+        50% {background-color: yellow;}
+        70% {background-color: blue;}
+        100% {background-color: green;}
+    }
+```
+<a href="assets/examples/40animation.html" target="_blank">Ejecutar código</a>
+
+#### animation-timing-function
+
+Especifica la curva de velocidad de una animación. Dispone de los mismos valores que las transiciones.
+
+- **ease** (predeterminado): La animación comienza con lentitud, luego acelerará rápidamente.
+- **ease-in**: Comienza lentamente, luego acelera y se detiene bruscamente.
+- **ease-out**: Comienza rápidamente y desacelera hasta detenerse.
+- **ease-in-out**: Similar a ease, pero con aceleración y desaceleración más sutil.
+- **linear**: Velocidad constante a través de la animación. 
+- **cubic-beizer**: Permite definir nuestros propios valores. cubic-beizer(0, 0, 0, 0).
+
+``` css
+    div {
+        width: 300px;
+        height: 100px;
+        background-color: black;
+        animation-name: ejemplo;
+        animation-duration: 4s;
+        animation-timing-function: ease-in;
+    }
+    @keyframes ejemplo {
+        0% {background-color: red;}
+        50% {background-color: yellow;}
+        70% {background-color: blue;}
+        100% {background-color: green;}
+    }
+```
+<a href="assets/examples/41animation.html" target="_blank">Ejecutar código</a>
+
+#### animation-iteration-count
+
+Determina el número de veces que una animación se repite. Tambien se puede fijar el valor en **infinite** para que se repita para siempre.
+
+``` css
+    div {
+        width: 300px;
+        height: 100px;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-duration: 3s;
+        animation-iteration-count: 3;
+    }
+    @keyframes ejemplo {
+        from {width: 0px;}
+        to {width: 300px;}
+    }
+```
+<a href="assets/examples/42animation.html" target="_blank">Ejecutar código</a>
+
+#### animation-direction
+
+Establece si una animación debe reproducirse hacia adelante, hacia atrás o alternando de un lado a otro.
+
+- **normal** (predeterminado): Se reproduce desde 0% a 100%.
+- **reverse**: Se reproduce desde el 100% hasta el 0%.
+- **alternate**: Se reproduce desde el 0% al 100% y en la siguiente iteración volverá del 100% al 0%.
+- **alternate-reverse**: Al igual que el valor pero de forma inversa
+
+``` css
+    div {
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+    @keyframes ejemplo {
+        0%   {left: 0px; top: 0px;}
+        25%  {left: 200px; top: 0px;}
+        50%  {left: 200px; top: 200px;}
+        75%  {left: 0px; top: 200px;}
+        100% {left: 0px; top: 0px;}
+    }
+```
+<a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
+
+Todos los valores pueden ser definidos con la propiedad animation. El orden de estos es importante, de lo contrario no funcionará.
+``` css
+    div {
+        animation-name: ejemplo;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+```
+``` css
+    div{
+        animation: ejemplo 3s ease-in 1s infinite reverse;    
+    }
+```
