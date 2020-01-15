@@ -301,3 +301,4 @@ Todos los valores pueden ser definidos con la propiedad animation. El orden de e
         animation: ejemplo 3s ease-in 1s infinite reverse;    
     }
 ```
+<a href="assets/examples/44animation.html" target="_blank">Ejecutar código</a>
