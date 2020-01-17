@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+
+    div:hover{
+        animation-name: ejemplo;
+        animation-play-state: paused;
+    }
+
+    @keyframes ejemplo {
+        from   {background-color: blue;}
+        to  {background-color: red;}
+    }
+    </style>    
+</head>
+<body>
+    <div></div>
+</body>
+</html>

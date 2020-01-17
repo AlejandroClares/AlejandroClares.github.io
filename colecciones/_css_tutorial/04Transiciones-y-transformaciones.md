@@ -182,7 +182,7 @@ Los **@keyframes** registran los estilos que el elemento tendra en ciertos tiemp
     }
 ```
 
-En el ejemplo anterior el elemento comenzara con un fondo negro, cuando la animación esta 50% completada tendra el color amarillo.
+En el ejemplo anterior el elemento comenzará con un fondo rojo, cuando la animación esta 50% completada tendra el color amarillo.
 
 Como una alternativa de uso a los valores porcentuales se pueden usar las palabras clave **from** (0%) y **to** (100%).
 
@@ -284,6 +284,68 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
     }
 ```
 <a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
+
+## animation-fill-mode
+
+Especifica un estilo antes y despues de la animación.
+
+- **none** (Predeterminado): Al elemento no se le aplica ningun estilo.
+- **forwards**: El estilo del elemento persiste despues de la animación. Es aplicado antes de la propiedad *animation-delay*.
+- **backward**: Antes de comenzar se aplica el primer estilo de la animación.
+- **both**: Se aplican tanto *forwards* como *backward*.
+
+En el siguiente ejemplo el div 
+
+``` css
+    div {
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-delay: 2s;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes ejemplo {
+        from   {left: 200px; background-color: blue;}
+        to  {background-color: yellow;}
+    }
+```
+<a href="assets/examples/44animation.html" target="_blank">Ejecutar código</a>
+
+En el ejemplo anterior podemos ver que no se especifico una propiedad *left* en el último estado de la animación. Este tratara de volver a sus propiedades definidas.
+
+#### animation-play-state
+
+Determina si una animación esta en ejecución o en pausa. Reanudando una animación en pausa, esta empezará por el lugar donde fue pausada.
+
+``` css
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+
+    div:hover{
+        animation-name: ejemplo;
+        animation-play-state: paused;
+    }
+
+    @keyframes ejemplo {
+        from   {background-color: blue;}
+        to  {background-color: red;}
+    }
+```
+<a href="assets/examples/45animation.html" target="_blank">Ejecutar código</a>
+
 
 Todos los valores pueden ser definidos con la propiedad animation. El orden de estos es importante, de lo contrario no funcionará.
 ``` css

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-delay: 2s;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes ejemplo {
+        from   {left: 200px; background-color: blue;}
+        to  {background-color: yellow;}
+    }
+    </style>    
+</head>
+<body>
+    <div></div>
+</body>
+</html>
