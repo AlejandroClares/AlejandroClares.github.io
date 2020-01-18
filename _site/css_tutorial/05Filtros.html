@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 - Tutorial - Filtros</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+    
+    <a href="/" >
+        Inicio
+    </a>
+    
+    <a href="/blog.html" >
+        Blog
+    </a>
+    
+</nav>
+      <main>
+        <h1 id="filtros">Filtros</h1>
+
+<h3 id="menú-de-navegación">Menú de navegación</h3>
+
+<ul>
+    <li><a href="#filter">filter</a></li>
+    <ul>
+        <li><a href="#drop-shadow">drop-shadow</a></li>
+        <li><a href="#grayscale">grayscale</a></li>
+        <li><a href="#sepia">sepia</a></li>
+        <li><a href="#saturate">saturate</a></li>
+        <li><a href="#hue-rotate">hue-rotate</a></li>
+        <li><a href="#invert">invert</a></li>
+        <li><a href="#opacity">opacity</a></li>
+        <li><a href="#brightness">brightness</a></li>
+        <li><a href="#contrast">contrast</a></li>
+        <li><a href="#blur">blur</a></li>
+        <li><a href="#multiples-filtros">Múltiples filtros</a></li>
+    </ul>
+</ul>
+
+<p><a name="filter"></a></p>
+
+<h2 id="filter">filter</h2>
+
+<p>La propiedad de CSS <strong>filter</strong> permite aplicar efectos gráficos como desenfoque o cambios de color en un elemento.</p>
+
+<p>El filtrado de imágenes es útil cuando quieres tener estilos diferentes de la misma imagen. En vez de subir múltiples imagenes a la web, puedes subir una sola y definir efectos visiales con la propiedad filter.</p>
+
+<p><a name="drop-shadow"></a></p>
+
+<h4 id="drop-shadow">drop-shadow</h4>
+
+<p><strong>drop-shadow(alto, ancho, desenfoque color)</strong> crea un efecto de sombra. El alto, ancho y desenfoque son valores expresados en pixeles.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">drop-shadow</span><span class="p">(</span><span class="m">5px</span> <span class="m">5px</span> <span class="m">3px</span> <span class="no">blue</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/46drop-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="grayscale"></a></p>
+
+<h4 id="grayscale">grayscale</h4>
+
+<p>La función <strong>grayscale</strong> convierte una imagen a escala de grises. Su único parámetro define la proporción de la conversión.</p>
+
+<p><strong>0%</strong> grayscale es la imagen original, mientras que <strong>100%</strong> hace que la imagen esté completamente en escala de grises.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">grayscale</span><span class="p">(</span><span class="m">100%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/47grayscale.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="sepia"></a></p>
+
+<h4 id="sepia">sepia</h4>
+
+<p>Convierte una imagen a sepia. Es similar a la escala de grises pero en un tono de color <strong>marrón-rojizo</strong>. La idea de los filtros sepia es que pueden hacer las fotos en blanco y negro sean un poco más atractivas.</p>
+
+<p><strong>0%</strong> sepia es la imagen original y <strong>100%</strong> es totalmente sepia.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">sepia</span><span class="p">(</span><span class="m">100%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/48sepia.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="saturate"></a></p>
+
+<h4 id="saturate">saturate</h4>
+
+<p>Controla la <strong>saturación de color</strong> de una imagen. El parámetro puede ser un valor porcentual o numérico.</p>
+
+<p><strong>0%</strong> o <strong>0</strong> crea una imagen sin saturación y <strong>100%</strong> o <strong>1</strong> es la imagen original.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">2</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/49saturate.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="hue-rotate"></a></p>
+
+<h4 id="hue-rotate">hue-rotate</h4>
+
+<p>Aplica una rotación al matiz (basada en un circulo de color) a una imagen. El parámetro de la función es un ángulo de rotación.</p>
+
+<p><img src="assets/image/hue-rotation.png" alt="hue-rotate" title="hue-rotate" /></p>
+
+<p>Si la imagen contiene color rojo, el cual se encuentra en 0 grados, rotar la matiz 90 grados hará que el color se vuelva verde.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">hue-rotate</span><span class="p">(</span><span class="m">90deg</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/50hue-rotate.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="invert"></a></p>
+
+<h4 id="invert">invert</h4>
+
+<p>Invierte los colores de una imagen para volver <strong>claras las áreas oscuras</strong> y <strong>las oscuras en áreas claras</strong>. El parámetro puede ser un valor porcentual o numérico.</p>
+
+<p><strong>0%</strong> deja la foto igual y <strong>100%</strong> crea una imagen totalmetne invertida. Se permiten valores superiores al 100% pero no se modificará la imagen más alla del 100%.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="nb">invert</span><span class="p">(</span><span class="m">100%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/51invert.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="opacity"></a></p>
+
+<h4 id="opacity">opacity</h4>
+
+<p>Establece la opacidad de una imagen para cambiar su transparencia.</p>
+
+<p><strong>0%</strong> crea una imagen transparente y <strong>100%</strong> crea una imagen opaca.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">opacity</span><span class="p">(</span><span class="m">30%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/52opacity.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="brightness"></a></p>
+
+<h4 id="brightness">brightness</h4>
+
+<p>Ajusta el brillo de la imagen haciendo que aparezca más brillante u oscura. El parámetro puede ser un valor porcentual o numérico.</p>
+
+<p><strong>0%</strong> crea una imagen oscura, <strong>100%</strong> es la imagen original y cualquier valor <strong>superior a 100%</strong> crea una imagen más brillante.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">brightness</span><span class="p">(</span><span class="m">50%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/53brightness.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="contrast"></a></p>
+
+<h4 id="contrast">contrast</h4>
+
+<p>Ajusta el contraste de una imagen. El parámetro puede ser un valor porcentual o numérico.</p>
+
+<p>Un valor <strong>inferior a 100%</strong> disminuye el contraste, mientras que <strong>uno superior lo aumenta</strong>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">contrast</span><span class="p">(</span><span class="m">150%</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/54contrast.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="blur"></a></p>
+
+<h4 id="blur">blur</h4>
+
+<p>Aplica un efecto de desenfoque en la imagen. El parámetro no acepta valores porcentuales.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">blur</span><span class="p">(</span><span class="m">3px</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/55blur.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="multiples-filtros"></a></p>
+
+<h4 id="múltiples-filtros">Múltiples filtros</h4>
+
+<p>Se pueden especificar múltiples filtros separandolos con espacios.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.img</span> <span class="p">{</span>
+        <span class="nl">filter</span><span class="p">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1.5</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1.2</span><span class="p">)</span> <span class="n">drop-shadow</span><span class="p">(</span><span class="m">5px</span> <span class="m">5px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/56multiples-filtros.html" target="_blank">Ejecutar código</a></p>
+
+      </main>
+  </div>
+  </body>
+</html>

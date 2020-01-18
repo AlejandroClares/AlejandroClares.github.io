@@ -8,6 +8,7 @@ nombre: Transiciones y transformaciones
 # Transiciones y transformaciones
 
 ### Menú de navegación
+
 <ul>
     <li><a href="#transition">transition</a></li>
     <ul>
@@ -24,11 +25,13 @@ nombre: Transiciones y transformaciones
     </ul>
     <li><a href="#animation">animation</a></li>
     <ul>
-        <li><a href="#keyframe">@keyframe</a></li>
-        <li><a href="#animation-timing-function"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#keyframes">@keyframes</a></li>
+        <li><a href="#animation-timing-function">animation-timing-function</a></li>
+        <li><a href="#animation-iteration-count">animation-iteration-count</a></li>
+        <li><a href="#animation-direction">animation-direction</a></li>
+        <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
+        <li><a href="#animation-play-state">animation-play-state</a></li>
+        <li><a href="#multiples-animaciones">Múltiples animaciones</a></li>
     </ul>
 </ul>
 
@@ -337,7 +340,9 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
 ```
 <a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
 
-## animation-fill-mode
+<a name="animation-fill-mode"></a>
+
+#### animation-fill-mode
 
 Especifica un estilo antes y despues de la animación.
 
@@ -371,6 +376,8 @@ En el siguiente ejemplo el div
 
 En el ejemplo anterior podemos ver que no se especifico una propiedad *left* en el último estado de la animación. Este tratara de volver a sus propiedades definidas.
 
+<a name="animation-play-state"></a>
+
 #### animation-play-state
 
 Determina si una animación esta en ejecución o en pausa. Reanudando una animación en pausa, esta empezará por el lugar donde fue pausada.
@@ -398,6 +405,9 @@ Determina si una animación esta en ejecución o en pausa. Reanudando una animac
 ```
 <a href="assets/examples/45animation.html" target="_blank">Ejecutar código</a>
 
+<a name="multiples-animaciones"></a>
+
+#### Múltiples animaciones
 
 Todos los valores pueden ser definidos con la propiedad animation. El orden de estos es importante, de lo contrario no funcionará.
 ``` css
