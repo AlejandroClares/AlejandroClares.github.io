@@ -7,6 +7,33 @@ nombre: Transiciones y transformaciones
 
 # Transiciones y transformaciones
 
+### Menú de navegación
+<ul>
+    <li><a href="#transition">transition</a></li>
+    <ul>
+        <li><a href="#transition-timing-function">transition-timing-function</a></li>
+    </ul>
+    <li><a href="#transform">transform</a></li>
+    <ul>
+        <li><a href="#rotate">rotate</a></li>
+        <li><a href="#transform-origin">transform-origin</a></li>
+        <li><a href="#translate">translate</a></li>
+        <li><a href="#skew">skew</a></li>
+        <li><a href="#scale">scale</a></li>
+        <li><a href="#multiples-transformaciones">Múltiples transformaciones</a></li>
+    </ul>
+    <li><a href="#animation">animation</a></li>
+    <ul>
+        <li><a href="#keyframe">@keyframe</a></li>
+        <li><a href="#animation-timing-function"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</ul>
+
+<a name="transition"></a>
+
 ## transition
 
 La propiedad **transition** permite definir la transición entre dos estados de un elemento. Hay diferentes estados, que pueden ser definidos utilizando <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#Indice_de_las_pseudo-clases_est%C3%A1ndar" target="_blank">**pseudo-clases**</a>.
@@ -31,6 +58,8 @@ Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition
     }
 ```
 <a href="assets/examples/32transition.html" target="_blank">Ejecutar código</a>
+
+<a name="transition-timing-function"></a>
 
 #### transition-timing-function
 
@@ -60,10 +89,13 @@ Especifica la curva de velocidad del efecto de transición.
 
 Para entender mejor el funcionamiento de **cubic-beizer** podemos visitar <a href="https://cubic-bezier.com" target="_blank">cubic-beizer.com</a>.
 
+<a name="transform"></a>
 
 ## transform
 
 Una transformación es un efecto que permite a un elemento cambiar su forma, tamaño y posición.
+
+<a name="rotate"></a>
 
 #### rotate
 
@@ -82,6 +114,8 @@ El método **rotate()** rota un elemento en sentido de las agujas del reloj o en
 ```
 <a href="assets/examples/34transform.html" target="_blank">Ejecutar código</a>
 
+<a name="transform-origin"></a>
+
 #### transform-origin
 
 La propiedad **transform-origin** permite cambiar la posición de los **elementos transformados**. El valor por defecto es 50% (horizontal) 50% (vertical) que corresponde al centro del elemento.
@@ -99,6 +133,8 @@ La propiedad **transform-origin** permite cambiar la posición de los **elemento
 ```
 <a href="assets/examples/35transform.html" target="_blank">Ejecutar código</a>
 
+<a name="translate"></a>
+
 #### translate
 
 El método **translate()** mueve un elemento desde su posición actual. Los valores positivos mueven el elemento hacia la derecha y hacia abajo, mientras que los valores negativos lo mueven hacia la izquierda y hacia arriba.
@@ -115,6 +151,8 @@ El método **translate()** mueve un elemento desde su posición actual. Los valo
 ```
 <a href="assets/examples/36transform.html" target="_blank">Ejecutar código</a>
 
+<a name="skew"></a>
+
 #### skew
 
 Sesga un elemento a lo largo del eje-x y eje-y. El segundo parámetro es opcional y por defecto será 0.
@@ -130,6 +168,8 @@ Sesga un elemento a lo largo del eje-x y eje-y. El segundo parámetro es opciona
     }
 ```
 <a href="assets/examples/37transform.html" target="_blank">Ejecutar código</a>
+
+<a name="scale"></a>
 
 #### scale
 
@@ -149,6 +189,8 @@ El método **scale()** aumenta o reduce el tamaño de un elemento de acuerdo a d
 
 <a href="assets/examples/38transform.html" target="_blank">Ejecutar código</a>
 
+<a name="multiples-transformaciones"></a>
+
 #### Múltiples transformaciones
 
 Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas con un espacio
@@ -165,9 +207,13 @@ Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas 
 ```
 <a href="assets/examples/39transform.html" target="_blank">Ejecutar código</a>
 
-## Animaciones
+<a name="animation"></a>
+
+## animation
 
 Una animación permite a un elemento cambiar gradualmente de un estilo a otro.
+
+<a name="keyframes"></a>
 
 #### @keyframes
 
@@ -204,6 +250,8 @@ Para que una animación funcione debemos asignarle a un elemento el nombre y la 
 ```
 <a href="assets/examples/40animation.html" target="_blank">Ejecutar código</a>
 
+<a name="animation-timing-function"></a>
+
 #### animation-timing-function
 
 Especifica la curva de velocidad de una animación. Dispone de los mismos valores que las transiciones.
@@ -233,9 +281,11 @@ Especifica la curva de velocidad de una animación. Dispone de los mismos valore
 ```
 <a href="assets/examples/41animation.html" target="_blank">Ejecutar código</a>
 
+<a name="animation-iteration-count"></a>
+
 #### animation-iteration-count
 
-Determina el número de veces que una animación se repite. Tambien se puede fijar el valor en **infinite** para que se repita para siempre.
+Determina el número de veces que una animación se repite. Tambien se puede fijar el valor en **infinite** para que se repita indefinidamente.
 
 ``` css
     div {
@@ -252,6 +302,8 @@ Determina el número de veces que una animación se repite. Tambien se puede fij
     }
 ```
 <a href="assets/examples/42animation.html" target="_blank">Ejecutar código</a>
+
+<a name="animation-direction"></a>
 
 #### animation-direction
 
@@ -284,6 +336,10 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
     }
 ```
 <a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
+
+<a name="multiples-animaciones"></a>
+
+#### Múltiples animaciones
 
 Todos los valores pueden ser definidos con la propiedad animation. El orden de estos es importante, de lo contrario no funcionará.
 ``` css
