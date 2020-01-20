@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" src="login.css">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <style>
+        .login {
+            width: 25%;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px lightgrey,
+                        3px -3px 3px lightgrey, 
+                        -3px 3px 3px lightgrey,
+                        -3px -3px 3px lightgrey;
+            font-size: 17px;
+            font-family: 'Roboto Slab', serif;
+        }
+        .field, .control {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .field {
+            margin-top: 10px;
+        }
+        .control {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .control-field {
+            margin-bottom: 10px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            margin: 5px auto 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 3px lightgrey;
+            font-size: 15px;
+            font-family: 'Roboto Slab', serif;
+        }
+        input[type="submit"] {
+            font-family: 'Roboto Slab', serif;
+            padding: 5px 10px 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="field">
+            <label for="name">Usuario</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password">
+        </div>
+        <div class="control">
+            <div class="control-field">
+                <label for="submit"></label>
+                <input type="submit" value="Iniciar sesion">
+            </div>
+            <div class="control-field">
+                <label for="submit"></label>
+                <input type="submit" value="Registrarse">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
