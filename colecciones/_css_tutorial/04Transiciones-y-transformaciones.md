@@ -340,6 +340,28 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
 ```
 <a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
 
+#### animation-delay
+
+Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación. Podemos especificarlo en segundos (usando **s**) o en milisegundos (usando **ms**).
+
+Si especificamos un valor negativo, la animación comenzará inmediatamente, pero no desde el principio de la animación, sino desde el punto que le hemos indicado. Por ejemplo, si ponemos retarde de -1s, la aminación comenzará en el segundo 1 de la secuencia.
+
+``` css
+    div {
+        width: 50px;
+        height: 100px;
+        background-color: orangered;
+        animation-name: ejemplo;
+        animation-duration: 3s;
+        animation-delay: 1s;
+    }
+    @keyframes ejemplo {
+        from {width: 50px;}
+        to {width: 300px;}
+    }
+```
+<a href="assets/examples/43.1animation.html" target="_blank">Ejecutar código</a>
+
 <a name="animation-fill-mode"></a>
 
 #### animation-fill-mode
