@@ -29,6 +29,7 @@ nombre: Transiciones y transformaciones
         <li><a href="#animation-timing-function">animation-timing-function</a></li>
         <li><a href="#animation-iteration-count">animation-iteration-count</a></li>
         <li><a href="#animation-direction">animation-direction</a></li>
+        <li><a href="#animation-delay">animation-delay</a></li>
         <li><a href="#animation-fill-mode">animation-fill-mode</a></li>
         <li><a href="#animation-play-state">animation-play-state</a></li>
         <li><a href="#multiples-animaciones">Múltiples animaciones</a></li>
@@ -340,6 +341,8 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
 ```
 <a href="assets/examples/43animation.html" target="_blank">Ejecutar código</a>
 
+<a name="animation-delay"></a>
+
 #### animation-delay
 
 Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación. Podemos especificarlo en segundos (usando **s**) o en milisegundos (usando **ms**).
@@ -353,7 +356,7 @@ Si especificamos un valor negativo, la animación comenzará inmediatamente, per
         background-color: orangered;
         animation-name: ejemplo;
         animation-duration: 3s;
-        animation-delay: 1s;
+        animation-delay: -1s;
     }
     @keyframes ejemplo {
         from {width: 50px;}
