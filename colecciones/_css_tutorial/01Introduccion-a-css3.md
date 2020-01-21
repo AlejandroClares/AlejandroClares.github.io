@@ -18,7 +18,3 @@ Algunos de las novedades más importantes son:
 - **Transformaciones**: Rotar, escalar, mover y sesgar elementos.
 - **Transiciones**: Animaciones de una propiedad css a otra.
 - **Animaciones**: Permite crear keyframes, establecer la duración, suavizado.
-
-{% for css_tutorial in site.css_tutorial %}
-[{{ css_tutorial.nombre }}]({{ css_tutorial.url }})
-{% endfor %}
