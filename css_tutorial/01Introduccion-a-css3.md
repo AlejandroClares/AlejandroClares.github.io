@@ -1,7 +1,7 @@
 ---
 author: Alejandro
 layout: default
-title: CSS - Tutorial - Introducción a CSS3
+title: CSS3 - Tutorial - Introducción a CSS3
 nombre: Introducción a CSS3
 ---
 

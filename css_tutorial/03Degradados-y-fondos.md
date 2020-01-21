@@ -1,6 +1,6 @@
 ---
 author: Alejandro
-layout: default
+layout: b4-layout
 title: CSS3 - Tutorial - Degradados y fondos
 nombre: Degradados y fondos
 ---

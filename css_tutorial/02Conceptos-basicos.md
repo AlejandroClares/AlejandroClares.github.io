@@ -1,6 +1,6 @@
 ---
 author: Alejandro
-layout: default
+layout: b4-layout
 title: CSS3 - Tutorial - Conceptos básicos
 nombre: Conceptos básicos
 ---
