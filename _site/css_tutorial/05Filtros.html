@@ -1,15 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CSS3 - Tutorial - Filtros</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/assets/css/first.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Volver arriba"><img src="/assets/Top_Arrow.png" width="30px" height="30px" alt="MDN"></button> 
+
+    <!-- <div class="to-top"></div> -->
     <div class="col-12">
         <!-- Menu superior -->
         <div class="row bg-primary">
@@ -51,12 +61,12 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html">Inicio</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">linear-gradient</a>
-                                <a class="dropdown-item" href="#">radial-gradient</a>
-                                <a class="dropdown-item" href="#">background-size</a>
-                                <a class="dropdown-item" href="#">background-clip</a>
-                                <a class="dropdown-item" href="#">Múltiples fondos</a>
-                                <a class="dropdown-item" href="#">opacity</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#linear-gradient">linear-gradient</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#radial-gradient">radial-gradient</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#background-size">background-size</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#background-clip">background-clip</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#multiples-fondos">Múltiples fondos</a>
+                                <a class="dropdown-item" href="/css_tutorial/03Degradados-y-fondos.html#opacity">opacity</a>
                             </div>
                         </li>
                         <!-- Transiciones y transformaciones -->
@@ -67,9 +77,9 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="/css_tutorial/04Transiciones-y-transformaciones.html">Inicio</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">transition</a>
-                                <a class="dropdown-item" href="#">transform</a>
-                                <a class="dropdown-item" href="#">animation</a>
+                                <a class="dropdown-item" href="/css_tutorial/04Transiciones-y-transformaciones.html#transition">transition</a>
+                                <a class="dropdown-item" href="/css_tutorial/04Transiciones-y-transformaciones.html#transform">transform</a>
+                                <a class="dropdown-item" href="/css_tutorial/04Transiciones-y-transformaciones.html#animation">animation</a>
                             </div>
                         </li>
                         <!-- Filtros -->
@@ -269,9 +279,30 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        } 
+    </script>
+</body>
 </html>
 
