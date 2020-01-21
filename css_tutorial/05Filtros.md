@@ -98,7 +98,7 @@ Controla la **saturación de color** de una imagen. El parámetro puede ser un v
 
 Aplica una rotación al matiz (basada en un circulo de color) a una imagen. El parámetro de la función es un ángulo de rotación.
 
-![hue-rotate](assets/image/hue-rotation.png "hue-rotate")
+<img style="width: 30%; height: 30%;" src="assets/image/hue-rotation.png" alt="hue-rotate">
 
 Si la imagen contiene color rojo, el cual se encuentra en 0 grados, rotar la matiz 90 grados hará que el color se vuelva verde.
 
