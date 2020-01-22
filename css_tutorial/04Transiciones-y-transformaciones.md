@@ -93,6 +93,8 @@ Especifica la curva de velocidad del efecto de transición.
 
 Para entender mejor el funcionamiento de **cubic-beizer** podemos visitar <a href="https://cubic-bezier.com" target="_blank">cubic-beizer.com</a>.
 
+<hr>
+
 <a name="transform"></a>
 
 ## transform
@@ -210,6 +212,8 @@ Se pueden aplicar varias transformaciones al mismo tiempo, basta con separarlas 
     }
 ```
 <a href="assets/examples/39transform.html" target="_blank">Ejecutar código</a>
+
+<hr>
 
 <a name="animation"></a>
 

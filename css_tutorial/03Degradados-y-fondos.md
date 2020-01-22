@@ -122,6 +122,8 @@ La función **repeating-linear-gradient** nos permite repetir un degradado linea
 ```
 <a href="assets/examples/23linear-gradient.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 <a name="radial-gradient"></a>
 
 ## radial-gradient
@@ -142,6 +144,8 @@ La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamañ
     }
 ```
 <a href="assets/examples/24radial-gradient.html" target="_blank">Ejecutar código</a>
+
+<hr>
 
 <a name="background-size"></a>
 
@@ -220,6 +224,8 @@ Usando el valor **cover** la imagen se escala al mayor tamaño posible sin estir
 ```
 <a href="assets/examples/27background-size.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 <a name="background-clip"></a>
 
 ## background-clip
@@ -271,6 +277,8 @@ Establecer un borde transparente sobre un elemento revelará el propio fondo del
 ```
 <a href="assets/examples/29background-clip.html" target="_blank">Ejecutar código</a>
 
+<hr>
+
 <a name="multiples-fondos"></a>
 
 ## Múltiples fondos
@@ -296,6 +304,8 @@ Tambien podemos usar la propiedad abreviada **background**.
     }
 ```
 <a href="assets/examples/30multiples-fondos.html" target="_blank">Ejecutar código</a>
+
+<hr>
 
 <a name="opacity"></a>
 
