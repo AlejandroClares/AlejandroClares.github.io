@@ -49,7 +49,7 @@ La mayoría de navegadores de hoy en día funcionan sin prefijos, pero es esenci
 
 Escribir varias veces las propiedades para que funcionen en diferentes navegadores puede ser molesto pero es temporal. Mientras los navegadores mejoran, añadirán soporte a las propiedades y eliminarán los prefijos.
 
-![Prefijos de navegador](assets/image/prefijosCSS3.jpg)
+<img style="max-width: 50%;" src="assets/image/prefijosCSS3.jpg" alt="Prefijos de navegador">
 
 <hr>
 
