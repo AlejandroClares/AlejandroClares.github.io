@@ -300,7 +300,7 @@ Puedes encontrar una lista de las pseudo-clases en <a href="https://developer.mo
 Los **pseudo-elementos** permiten dar estilo a partes específicas de los elementos seleccionados. Como regla general, los pseudo-elementos se usan con **"::"** aunque tambien pueden usarse **":"**. Es adecuado usar **"::"** para distinguirlo de las **pseudo-clases**.   
 
 
-El pseudo-elemento **::selection** modifica el aspecto de la parte que es subrayada.
+El pseudo-elemento **::selection** modifica el aspecto de la parte que es seleccionada.
 
 ``` css
     p::selection {
