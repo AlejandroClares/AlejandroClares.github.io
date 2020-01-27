@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    div.Y, div.X, div.Z {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .Y {
+        animation-name: Y;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .X {
+        animation-name: X;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .Z {
+        animation-name: Z;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes Y {
+        from {transform: rotateY(0deg);}
+        to {transform: rotateY(360deg);}
+    }
+    @keyframes X {
+        from {transform: rotateX(0deg);}
+        to {transform: rotateX(360deg);}
+    }
+    @keyframes Z {
+        from {transform: rotateZ(0deg);}
+        to {transform: rotateZ(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div style="perspective: 1000px;">
+        <div class=X>Eje X</div>
+        <div class=Y>Eje Y</div>
+        <div class=Z>Eje Z</div>
+    </div>
+</body>
+</html>

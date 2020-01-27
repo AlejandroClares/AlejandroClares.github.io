@@ -230,7 +230,7 @@ Los colores RGBA se especifican como: **rgba(red, green, blue, alpha)**. El par√
     .div {
         width: 200px;
         height: 200px;
-        background-color: rgba(255, 0, 0, 0.2);
+        background-color: rgba(255, 0, 0, 0.7);
     }
 ```
 <a href="assets/examples/08rgba.html" target="_blank">Ejecutar c√≥digo</a>
