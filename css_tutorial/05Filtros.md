@@ -38,7 +38,7 @@ El filtrado de imágenes es útil cuando quieres tener estilos diferentes de la 
 
 #### drop-shadow
 
-**drop-shadow(alto, ancho, desenfoque color)** crea un efecto de sombra. El alto, ancho y desenfoque son valores expresados en pixeles.
+**drop-shadow(alto, ancho, desenfoque, color)** crea un efecto de sombra. El alto, ancho y desenfoque son valores expresados en pixeles.
 
 ``` css
     img {

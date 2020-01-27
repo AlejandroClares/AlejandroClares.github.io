@@ -12,7 +12,6 @@ CSS3 o CSS nivel 3 es el último estándar de css y es totalmente compatible con
 Algunas de las novedades más importantes son:
 
 - **border-radius**: Crear esquinas redondeadas para los elementos.
-- **border-image**: Especifica una imagen como el borde de un elemento.
 - **Múltiples backgrounds**: Permite aplicar múltiples fondos.
 - **box-shadow**: Crea sombras en los elementos especificando el color y tamaño.
 - **Degradados**: Establecer fondos de color de un elemento a degradados.

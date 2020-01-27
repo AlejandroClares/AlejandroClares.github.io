@@ -24,7 +24,7 @@ nombre: Degradados y fondos
     </ul>
     <li><a href="#background-clip">background-clip</a></li>
     <ul>
-        <li><a href="#bordes-transparentes">Bodes transparentes</a></li>
+        <li><a href="#bordes-transparentes">Bordes transparentes</a></li>
     </ul>
     <li><a href="#multiples-fondos">Múltiples fondos</a></li>
     <li><a href="#opacity">Opacity</a></li>
@@ -35,8 +35,8 @@ nombre: Degradados y fondos
 ## linear-gradient
 
 Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos.   
-Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas.   
-También se puede fijar un punto de partida y direccion junto el efecto degradado.
+Para declarar un degradado lineal se debe definir al menos dos paradas de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas.   
+También se puede fijar un punto de partida y dirección junto el efecto degradado.
 
 ``` css
     div {
@@ -47,7 +47,7 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 ```
 <a href="assets/examples/18linear-gradient.html" target="_blank">Ejecutar código</a>
 
-Se pueden utilizar nombres de colores, calores hexadecimales, colores RGB o HSL para definir el color del radiante.
+Se pueden utilizar nombres de colores, colores hexadecimales, colores RGB o HSL para definir el color del degradado.
 
 <a name="paradas-de-colores"></a>
 
@@ -74,7 +74,7 @@ Las posiciones de las paradas de colores pueden ser especificadas en cada color.
 ```
 <a href="assets/examples/20linear-gradient.html" target="_blank">Ejecutar código</a>
 
-Adicionalmente a los **porcentajes**, se puede utilizar **px**, **em** entre otros
+Adicionalmente a los **porcentajes**, se puede utilizar **px** y **em** entre otros.
 
 <a name="direccion-del-degradado"></a>
 
@@ -95,7 +95,7 @@ Podemos definir la dirección en la que se ejecuta el degradado. Los valores sop
 
 #### El ángulo del degradado
 
-Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es **0deg**. Un degradado horizontal, de izquierda hacia la derecha son **90deg**
+Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es **0deg**. El ángulo rota en la dirección de las agujas del reloj.
 
 ``` css
     div {
@@ -130,10 +130,11 @@ La función **repeating-linear-gradient** nos permite repetir un degradado linea
 
 El degradado **radial** se define por su centro y se deben definir al menos dos paradas.   
 
-La sintaxis css del degradado radial se ve así: radial-gradient(*forma* *tamaño* at *posicion*, *color*, ...)
+La sintaxis css del degradado radial se ve así:   
+**radial-gradient(*forma* *tamaño* at *posicion*, *color1*, color2, ...)**
 - **Forma** (Opcional): Se puede definir como un circulo o un ellipse (por defecto)
-- **Tamaño** (Opcional): Puede ser *farthest-corner* (por defecto), *closest-side*, *closest-corner*, *farthest-side*. Tambien se pueden usar valores numéricos, como pixeles o em
-- **Posición**: Se usan dos valores porcentuales o valores predefinidos como *top* o *right* para definir la posición, por defecto es *center*. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.
+- **Tamaño** (Opcional): Puede ser *farthest-corner* (por defecto), *closest-side*, *closest-corner*, *farthest-side*. Tambien se pueden usar valores numéricos, como pixeles o em.
+- **Posición**: Se usan dos valores porcentuales o valores predefinidos como *top* o *right* para definir la posición, **por defecto es *center***. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.
 
 ``` css
     div {

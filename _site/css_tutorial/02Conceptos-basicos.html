@@ -106,14 +106,14 @@
         <li><a href="#inset">Inset</a></li>
         <li><a href="#box-shadow-multiples-sombras">Múltiples sombras</a></li>
     </ul>
+    <li><a href="#text-shadow">text-shadow</a></li>
+    <ul>
+        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
     <li><a href="#efectos-de-transparencia">Efectos de transparencia</a></li>
     <ul>
         <li><a href="#colores-rgba">Colores RGBA</a></li>
         <li><a href="#colores-hsl-y-hsla">Colores HSL y HSLA</a></li>
-    </ul>
-    <li><a href="#text-shadow">text-shadow</a></li>
-    <ul>
-        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
     </ul>
     <li><a href="#pseudo-clases">Pseudo-Clases</a></li>
     <li><a href="#pseudo-elementos">Pseudo-Elementos</a></li>
@@ -169,6 +169,7 @@
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
         <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
         <span class="nl">border-radius</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre></div></div>
@@ -250,19 +251,47 @@ Estos valores se añaden antes de asignar el color.</p>
 <p><a name="box-shadow-multiples-sombras"></a></p>
 
 <h4 id="múltiples-sombras">Múltiples sombras</h4>
-<p>Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla <strong>separadas por una coma</strong>. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra</p>
+<p>Podemos definir múltiples sombras para una misma caja escribiendo éstas en la misma regla <strong>separadas por una coma</strong>. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">.div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
-            <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
-            <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
-            <span class="nl">box-shadow</span><span class="p">:</span> 
-            <span class="nb">inset</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">2px</span> <span class="n">grey</span><span class="p">,</span>
-            <span class="nb">inset</span> <span class="m">-10px</span> <span class="m">-10px</span> <span class="m">2px</span> <span class="n">grey</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
+        <span class="err">box-shadow;</span>
+        <span class="err">inset</span> <span class="err">10px</span> <span class="err">10px</span> <span class="err">2px</span> <span class="err">grey,</span>
+        <span class="err">inset</span> <span class="err">-10px</span> <span class="err">-10px</span> <span class="err">2px</span> <span class="err">grey;</span>
     <span class="p">}</span>
 </code></pre></div></div>
 
 <p><a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<hr />
+
+<p><a name="text-shadow"></a></p>
+
+<h2 id="text-shadow">text-shadow</h2>
+
+<p>La propiedad <strong>text-shadow</strong> permite insertar sombras al texto. La propiedad text-shadow se define: <br />
+<strong>text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a></p>
+
+<p><a name="text-shadow-multiples-sombras"></a></p>
+
+<h4 id="múltiples-sombras-1">Múltiples sombras</h4>
+
+<p>La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">,</span>
+                    <span class="m">20px</span> <span class="m">20px</span> <span class="m">3px</span> <span class="no">orange</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+<p><a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a></p>
 
 <hr />
 
@@ -305,35 +334,6 @@ Los colores RGBA se especifican como: <strong>rgba(red, green, blue, alpha)</str
     <span class="p">}</span>
 </code></pre></div></div>
 <p><a href="assets/examples/09hsl.html" target="_blank">Ejecutar código</a></p>
-
-<hr />
-
-<p><a name="text-shadow"></a></p>
-
-<h2 id="text-shadow">text-shadow</h2>
-
-<p>La propiedad <strong>text-shadow</strong> permite insertar sombras al texto. La propiedad text-shadow se define: <strong>text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);</strong></p>
-
-<p>El argumento de color tambien es opcional, pero si no se añade el color por defecto sera transparente y no se verá la sombra.</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
-        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre></div></div>
-<p><a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a></p>
-
-<p><a name="text-shadow-multiples-sombras"></a></p>
-
-<h4 id="múltiples-sombras-1">Múltiples sombras</h4>
-
-<p>La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">h1</span> <span class="p">{</span>
-        <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">10px</span> <span class="m">10px</span> <span class="m">3px</span> <span class="n">grey</span><span class="p">,</span>
-                    <span class="m">20px</span> <span class="m">20px</span> <span class="m">3px</span> <span class="no">orange</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre></div></div>
-<p><a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a></p>
 
 <hr />
 

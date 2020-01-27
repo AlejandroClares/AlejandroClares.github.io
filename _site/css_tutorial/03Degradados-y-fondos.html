@@ -112,7 +112,7 @@
     </ul>
     <li><a href="#background-clip">background-clip</a></li>
     <ul>
-        <li><a href="#bordes-transparentes">Bodes transparentes</a></li>
+        <li><a href="#bordes-transparentes">Bordes transparentes</a></li>
     </ul>
     <li><a href="#multiples-fondos">Múltiples fondos</a></li>
     <li><a href="#opacity">Opacity</a></li>
@@ -123,8 +123,8 @@
 <h2 id="linear-gradient">linear-gradient</h2>
 
 <p>Los degradados en CSS3 te permiten desplegar transiciones suavizadas entre dos o mas colores específicos. <br />
-Para declarar un degradado lineal se debe definir al menos dos parads de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas. <br />
-También se puede fijar un punto de partida y direccion junto el efecto degradado.</p>
+Para declarar un degradado lineal se debe definir al menos dos paradas de colores. Las paradas de colores son los colores entre los cuales se quieren reproducir las transiciones suavizadas. <br />
+También se puede fijar un punto de partida y dirección junto el efecto degradado.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
@@ -134,7 +134,7 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 </code></pre></div></div>
 <p><a href="assets/examples/18linear-gradient.html" target="_blank">Ejecutar código</a></p>
 
-<p>Se pueden utilizar nombres de colores, calores hexadecimales, colores RGB o HSL para definir el color del radiante.</p>
+<p>Se pueden utilizar nombres de colores, colores hexadecimales, colores RGB o HSL para definir el color del degradado.</p>
 
 <p><a name="paradas-de-colores"></a></p>
 
@@ -159,7 +159,7 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 </code></pre></div></div>
 <p><a href="assets/examples/20linear-gradient.html" target="_blank">Ejecutar código</a></p>
 
-<p>Adicionalmente a los <strong>porcentajes</strong>, se puede utilizar <strong>px</strong>, <strong>em</strong> entre otros</p>
+<p>Adicionalmente a los <strong>porcentajes</strong>, se puede utilizar <strong>px</strong> y <strong>em</strong> entre otros.</p>
 
 <p><a name="direccion-del-degradado"></a></p>
 
@@ -179,7 +179,7 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 
 <h4 id="el-ángulo-del-degradado">El ángulo del degradado</h4>
 
-<p>Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es <strong>0deg</strong>. Un degradado horizontal, de izquierda hacia la derecha son <strong>90deg</strong></p>
+<p>Como alternativa a las direcciones predefinidas, podemos controlar la dirección del degradado especificando un ángulo. El ángulo de degradado comienza de forma vertical, de abajo hacia arriba, este ángulo es <strong>0deg</strong>. El ángulo rota en la dirección de las agujas del reloj.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
@@ -212,11 +212,12 @@ También se puede fijar un punto de partida y direccion junto el efecto degradad
 
 <p>El degradado <strong>radial</strong> se define por su centro y se deben definir al menos dos paradas.</p>
 
-<p>La sintaxis css del degradado radial se ve así: radial-gradient(<em>forma</em> <em>tamaño</em> at <em>posicion</em>, <em>color</em>, …)</p>
+<p>La sintaxis css del degradado radial se ve así: <br />
+<strong>radial-gradient(<em>forma</em> <em>tamaño</em> at <em>posicion</em>, <em>color1</em>, color2, …)</strong></p>
 <ul>
   <li><strong>Forma</strong> (Opcional): Se puede definir como un circulo o un ellipse (por defecto)</li>
-  <li><strong>Tamaño</strong> (Opcional): Puede ser <em>farthest-corner</em> (por defecto), <em>closest-side</em>, <em>closest-corner</em>, <em>farthest-side</em>. Tambien se pueden usar valores numéricos, como pixeles o em</li>
-  <li><strong>Posición</strong>: Se usan dos valores porcentuales o valores predefinidos como <em>top</em> o <em>right</em> para definir la posición, por defecto es <em>center</em>. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.</li>
+  <li><strong>Tamaño</strong> (Opcional): Puede ser <em>farthest-corner</em> (por defecto), <em>closest-side</em>, <em>closest-corner</em>, <em>farthest-side</em>. Tambien se pueden usar valores numéricos, como pixeles o em.</li>
+  <li><strong>Posición</strong>: Se usan dos valores porcentuales o valores predefinidos como <em>top</em> o <em>right</em> para definir la posición, <strong>por defecto es <em>center</em></strong>. El primer valor porcentual define la posición horizontal, siendo 0% izquierda y 100% derecha. El segundo valor define la posición vertical, siendo 0% arriba y 100% abajo.</li>
 </ul>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>

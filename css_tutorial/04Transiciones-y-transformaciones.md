@@ -44,7 +44,6 @@ La propiedad **transition** permite definir la transición entre dos estados de 
 
 - **transition-property**: Especifica la propiedad a ser transicionada.
 - **transition-duration**: Duración de la transición.
-- **transition-timing-function**: Especifica cómo el ritmo de la transición cambia sobre su duración.
 - **transition-delay**: Especifica un retraso para el efecto de la transición.
 
 Estas propiedades tambien pueden ser abreviadas usando la propiedad **transition**, siguiendo el orden anterior.
@@ -301,7 +300,7 @@ Determina el número de veces que una animación se repite. Tambien se puede fij
         height: 100px;
         background-color: orangered;
         animation-name: ejemplo;
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-iteration-count: 3;
     }
     @keyframes ejemplo {
@@ -320,7 +319,7 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
 - **normal** (predeterminado): Se reproduce desde 0% a 100%.
 - **reverse**: Se reproduce desde el 100% hasta el 0%.
 - **alternate**: Se reproduce desde el 0% al 100% y en la siguiente iteración volverá del 100% al 0%.
-- **alternate-reverse**: Al igual que el valor pero de forma inversa
+- **alternate-reverse**: Igual que el valor alternate pero de forma inversa
 
 ``` css
     div {
@@ -331,7 +330,7 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
         position: absolute;
         background-color: orangered;
         animation-name: ejemplo;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-iteration-count: 2;
         animation-direction: alternate;
     }
@@ -351,7 +350,7 @@ Establece si una animación debe reproducirse hacia adelante, hacia atrás o alt
 
 Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación. Podemos especificarlo en segundos (usando **s**) o en milisegundos (usando **ms**).
 
-Si especificamos un valor negativo, la animación comenzará inmediatamente, pero no desde el principio de la animación, sino desde el punto que le hemos indicado. Por ejemplo, si ponemos retarde de -1s, la aminación comenzará en el segundo 1 de la secuencia.
+Si especificamos un valor negativo, la animación comenzará inmediatamente, pero no desde el principio de la animación, sino desde el punto que le hemos indicado. Por ejemplo, si ponemos retardo de -1s, la aminación comenzará en el segundo 1 de la secuencia.
 
 ``` css
     div {
@@ -380,7 +379,6 @@ Especifica un estilo antes y despues de la animación.
 - **backward**: Antes de comenzar se aplica el primer estilo de la animación.
 - **both**: Se aplican tanto *forwards* como *backward*.
 
-En el siguiente ejemplo el div 
 
 ``` css
     div {
@@ -403,7 +401,7 @@ En el siguiente ejemplo el div
 ```
 <a href="assets/examples/44animation.html" target="_blank">Ejecutar código</a>
 
-En el ejemplo anterior podemos ver que no se especifico una propiedad *left* en el último estado de la animación. Este tratara de volver a sus propiedades definidas.
+En el ejemplo anterior podemos ver que no se especifico una propiedad *left* en el último estado de la animación. Este tratará de volver a sus propiedades definidas inicialmente.
 
 <a name="animation-play-state"></a>
 

@@ -18,14 +18,14 @@ nombre: Conceptos básicos
         <li><a href="#inset">Inset</a></li>
         <li><a href="#box-shadow-multiples-sombras">Múltiples sombras</a></li>
     </ul>
+    <li><a href="#text-shadow">text-shadow</a></li>
+    <ul>
+        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
+    </ul>
     <li><a href="#efectos-de-transparencia">Efectos de transparencia</a></li>
     <ul>
         <li><a href="#colores-rgba">Colores RGBA</a></li>
         <li><a href="#colores-hsl-y-hsla">Colores HSL y HSLA</a></li>
-    </ul>
-    <li><a href="#text-shadow">text-shadow</a></li>
-    <ul>
-        <li><a href="#text-shadow-multiples-sombras">Múltiples sombras</a></li>
     </ul>
     <li><a href="#pseudo-clases">Pseudo-Clases</a></li>
     <li><a href="#pseudo-elementos">Pseudo-Elementos</a></li>
@@ -85,6 +85,7 @@ Una caja puede ser convertida en un círculo solo usando CSS. El radio debe ser 
     .div {
         width: 200px;
         height: 200px;
+        background-color: orangered;
         border-radius: 100px;
     }
 ```
@@ -166,22 +167,53 @@ La propiedad **inset** permite crear sombras dentro del elemento.
 <a name="box-shadow-multiples-sombras"></a>
 
 #### Múltiples sombras
-Podemos definir múltiples sombras para una misma caja escribiendo estas en la misma regla **separadas por una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
+Podemos definir múltiples sombras para una misma caja escribiendo éstas en la misma regla **separadas por una coma**. En caso de especificar un valor que pueda contradecir a otro, este se insertará al fondo de la sombra
 
 ``` css
     .div {
         width: 300px;
-            height: 100px;
-            background-color: orangered;
-            box-shadow: 
-            inset 10px 10px 2px grey,
-            inset -10px -10px 2px grey;
+        height: 100px;
+        background-color: orangered;
+        box-shadow;
+        inset 10px 10px 2px grey,
+        inset -10px -10px 2px grey;
     }
 ```
 
 <a href="assets/examples/07box-shadow.html" target="_blank">Ejecutar código</a>
 
 <hr>
+
+<a name="text-shadow"></a>
+
+## text-shadow
+
+La propiedad **text-shadow** permite insertar sombras al texto. La propiedad text-shadow se define:   
+**text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);**
+
+``` css
+    h1 {
+        text-shadow: 10px 10px 3px grey;
+    }
+```
+<a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a>
+
+<a name="text-shadow-multiples-sombras"></a>
+
+#### Múltiples sombras
+
+La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores
+
+``` css
+    h1 {
+        text-shadow: 10px 10px 3px grey,
+                    20px 20px 3px orange;
+    }
+```
+<a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
+
+<hr>
+
 
 <a name="efectos-de-transparencia"></a>
 
@@ -222,37 +254,6 @@ Los colores **HSLA** funcionan igual, añadiendo el canal *alpha*.
     }
 ```
 <a href="assets/examples/09hsl.html" target="_blank">Ejecutar código</a>
-
-<hr>
-
-<a name="text-shadow"></a>
-
-## text-shadow
-
-La propiedad **text-shadow** permite insertar sombras al texto. La propiedad text-shadow se define: **text-shadow: desplazamiento-X, desplazamiento-Y, desenfoque (opcional), color (opcional);**
-
-El argumento de color tambien es opcional, pero si no se añade el color por defecto sera transparente y no se verá la sombra.
-
-``` css
-    h1 {
-        text-shadow: 10px 10px 3px grey;
-    }
-```
-<a href="assets/examples/10text-shadow.html" target="_blank">Ejecutar código</a>
-
-<a name="text-shadow-multiples-sombras"></a>
-
-#### Múltiples sombras
-
-La propiedad text-shadow soporta múltiples sombras, separando con comas sus valores
-
-``` css
-    h1 {
-        text-shadow: 10px 10px 3px grey,
-                    20px 20px 3px orange;
-    }
-```
-<a href="assets/examples/11text-shadow.html" target="_blank">Ejecutar código</a>
 
 <hr>
 

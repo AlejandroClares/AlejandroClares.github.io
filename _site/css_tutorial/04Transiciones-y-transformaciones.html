@@ -133,7 +133,6 @@
 <ul>
   <li><strong>transition-property</strong>: Especifica la propiedad a ser transicionada.</li>
   <li><strong>transition-duration</strong>: Duración de la transición.</li>
-  <li><strong>transition-timing-function</strong>: Especifica cómo el ritmo de la transición cambia sobre su duración.</li>
   <li><strong>transition-delay</strong>: Especifica un retraso para el efecto de la transición.</li>
 </ul>
 
@@ -383,7 +382,7 @@
         <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
         <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
         <span class="nl">animation-name</span><span class="p">:</span> <span class="n">ejemplo</span><span class="p">;</span>
-        <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">3s</span><span class="p">;</span>
+        <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
         <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="k">@keyframes</span> <span class="n">ejemplo</span> <span class="p">{</span>
@@ -403,7 +402,7 @@
   <li><strong>normal</strong> (predeterminado): Se reproduce desde 0% a 100%.</li>
   <li><strong>reverse</strong>: Se reproduce desde el 100% hasta el 0%.</li>
   <li><strong>alternate</strong>: Se reproduce desde el 0% al 100% y en la siguiente iteración volverá del 100% al 0%.</li>
-  <li><strong>alternate-reverse</strong>: Al igual que el valor pero de forma inversa</li>
+  <li><strong>alternate-reverse</strong>: Igual que el valor alternate pero de forma inversa</li>
 </ul>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
@@ -414,7 +413,7 @@
         <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
         <span class="nl">background-color</span><span class="p">:</span> <span class="no">orangered</span><span class="p">;</span>
         <span class="nl">animation-name</span><span class="p">:</span> <span class="n">ejemplo</span><span class="p">;</span>
-        <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">4s</span><span class="p">;</span>
+        <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
         <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
         <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>
     <span class="p">}</span>
@@ -434,7 +433,7 @@
 
 <p>Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación. Podemos especificarlo en segundos (usando <strong>s</strong>) o en milisegundos (usando <strong>ms</strong>).</p>
 
-<p>Si especificamos un valor negativo, la animación comenzará inmediatamente, pero no desde el principio de la animación, sino desde el punto que le hemos indicado. Por ejemplo, si ponemos retarde de -1s, la aminación comenzará en el segundo 1 de la secuencia.</p>
+<p>Si especificamos un valor negativo, la animación comenzará inmediatamente, pero no desde el principio de la animación, sino desde el punto que le hemos indicado. Por ejemplo, si ponemos retardo de -1s, la aminación comenzará en el segundo 1 de la secuencia.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
@@ -464,8 +463,6 @@
   <li><strong>both</strong>: Se aplican tanto <em>forwards</em> como <em>backward</em>.</li>
 </ul>
 
-<p>En el siguiente ejemplo el div</p>
-
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">div</span> <span class="p">{</span>
         <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
         <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
@@ -486,7 +483,7 @@
 </code></pre></div></div>
 <p><a href="assets/examples/44animation.html" target="_blank">Ejecutar código</a></p>
 
-<p>En el ejemplo anterior podemos ver que no se especifico una propiedad <em>left</em> en el último estado de la animación. Este tratara de volver a sus propiedades definidas.</p>
+<p>En el ejemplo anterior podemos ver que no se especifico una propiedad <em>left</em> en el último estado de la animación. Este tratará de volver a sus propiedades definidas inicialmente.</p>
 
 <p><a name="animation-play-state"></a></p>
 
